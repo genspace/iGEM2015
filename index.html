@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.9.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.9.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { 
+          margin:0; 
+          padding:0; 
+          width:100%; 
+        }
+        #map { 
+          position:absolute; 
+          top:0; 
+          bottom:0; 
+          width:100%;
+        }
+    </style>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+<div>
+  <img id="mapimg" src="gowanus_canal.png" alt="">
+  <svg id='map' x="0px" y="0px" viewBox="0 0 2516.686 6662.167" enable-background="new 0 0 2516.686 6662.167">
+    <g>
+      <circle id="gcss-01" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1459" cy="107" r="25"/>
+      <circle id="gcss-02" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1459" cy="560" r="25"/>
+      <circle id="gcss-03" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1459" cy="758" r="25"/>
+      <circle id="gcss-04" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1465" cy="1158" r="25"/>
+      <circle id="gcss-05" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1555" cy="1538" r="25"/>
+      <circle id="gcss-06" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1532" cy="1762" r="25"/>
+      <circle id="gcss-07" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1512" cy="1932" r="25"/>
+      <circle id="gcss-08" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1932" cy="2112" r="25"/>
+      <circle id="gcss-09" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1112" cy="2038" r="25"/>
+      <circle id="gcss-10" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="862" cy="2260" r="25"/>
+      <circle id="gcss-11" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="752" cy="2550" r="25"/>
+      <circle id="gcss-12" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="598" cy="2900" r="25"/>
+      <circle id="gcss-13" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="648" cy="3291" r="25"/>
+      <circle id="gcss-14" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="568" cy="4032" r="25"/>
+    </g>
+    <polygon opacity="0.3" fill="#8CD1E3" stroke="#2E3192" stroke-linejoin="round" stroke-miterlimit="10" points="2020,2167 
+      2011.904,2165.504 2011,2158 1664,2129 1514,1982 992,2102 951.109,2118.911 919,2130.667 882,2149.667 834.667,2179 812,2197 
+      810,2207 815,2215 1218.5,2250.5 1215.219,2280.612 1340,2293 1335.5,2345.5 756.5,2288 720.5,2329.5 691.5,2408.5 674.5,2497.5 
+      734.5,2509.5 1044.5,2539.5 1037,2623.5 970,2616.5 954,2598.5 878,2593.5 873,2602.5 723,2584.5 714.214,2577.488 670.5,2577.5 
+      645.5,2819.5 641.5,2819.5 602,3262 617,3273 732.172,3282.587 729.875,3329.604 614,3320 600.396,3331.195 588,3500 585,3509 
+      598,3538 582,3621 568,3665.5 570.921,3696.504 575,3818.667 703.333,4244 507.333,4132 491.301,3989.279 503,3988.5 
+      470.01,3754.423 504,3756 511,3621 482,3585 501.667,3475.119 498.943,3466.989 505,3456.5 573,2812 553,2792.5 564.864,2779.298 
+      605.5,2491 614,2411.5 658,2291.5 694,2235 712.5,2212 752,2166.5 794.293,2129.017 806.854,2129.417 844.134,2106.33 882,2086 
+      940,2057 992,2033 1318.063,1934.68 1323.522,1939.347 1482.417,1899.304 1526,1401 1419,1141 1424,55 1495,55 1494,1132 1610,1385 
+      1555,1935 1656,2046 2042,2080 2036,2138 2024,2137 "/>
+  </svg>
+
+</div>
+<script>
+  var map = d3.select('#map')
+  var img = d3.select('#mapimg')
+  size()
+  function size () {
+    img.style({
+      width:window.innerWidth,
+    })
+
+    map.select('image').attr({
+      width:map.node().getBoundingClientRect().width,
+      height:map.node().getBoundingClientRect().height,
+    })
+  }
+
+  d3.select(window).on('resize.index',size)
+</script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.9.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.9.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { 
+          margin:0; 
+          padding:0; 
+          width:100%; 
+          height:4000px; 
+        }
+        #map { 
+          position:fixed; 
+          top:0; 
+          bottom:0; 
+          width:100%; 
+          height:400px; 
+        }
+    </style>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYmxhY2tpIiwiYSI6InRfd1A0VzQifQ.pY3kcqb7lV1ry5IT3qQjzg';
+
+// var tileset = 'mapbox.run-bike-hike';
+// var map = new mapboxgl.Map({
+//   container: 'map', // container id
+//   style: {
+//     "version": 7,
+//     "sources": {
+//       "simple-tiles": {
+//         "type": "raster",
+//         "url": "mapbox://" + tileset,
+//         "tileSize": 256
+//       }
+//     },
+//     "layers": [{
+//       "id": "simple-tiles",
+//       "type": "raster",
+//       "source": "simple-tiles",
+//       "minzoom": 0,
+//       "maxzoom": 22
+//     }]
+//   },
+//   center: [40.68117354912252, -73.98692705587925], // starting position
+//   bearing: 29.499999999999996, // starting position
+//   zoom: 15, // starting zoom
+//   // interactive: false
+// });
+
+var map = d3.select('#map')
+
+map.style({
+  width:window.innerWidth,
+  height:window.innerHeight
+})
+
+var center = [40.679948422955675, -73.98916325699884]
+var bearing = 27
+var mb = new mapboxgl.Map({
+  container: 'map', // container id
+  style: 'https://www.mapbox.com/mapbox-gl-styles/styles/pencil-v7.json', //stylesheet location
+  center: center, // starting position
+  bearing: bearing, // starting position
+  zoom: 15.937290496494782, // starting zoom
+  // interactive: false
+});
+
+
+
+// debugger
+
+// map.addControl(new mapboxgl.Navigation());
+mb.on('mousemove',function(e){
+  console.log(e.latLng)
+})
+
+d3.select(window).on('keyup',function() {
+  console.log(d3.event.keyCode)
+  if(d3.event.keyCode == 40){
+    center[0] = center[0]+.001*Math.sin(bearing) 
+    center[1] = center[1]+.0001
+    mb.panTo({lat: center[0],lng: center[1]})
+  }
+})
+.on('scroll',function(){
+  console.log('scroll')
+})
+
+
+
+</script>
+
+</body>
+</html>
+
+
+
+<!-- mapbox:///mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5 -->
+
+<!-- https://api.mapbox.com/v4/{mapid}/{options}.html?access_token=<your access token> -->
