@@ -1,8 +1,7 @@
 $green=rgb(31,174,107)
 $gHover = #1A8A55
 
-/* Sticky footer styles
--------------------------------------------------- */
+
 html
   position relative
   min-height 100%
@@ -21,11 +20,18 @@ body
 
 .container>.navbar-header
   width 100%
-  min-height 70px
+  min-height 80px
 
 .navbar-default
   background-color #fff
   border-color #e7e7e7
+  
+.row
+  img
+    width 100%
+    &.genspace
+      max-width 420px
+      margin-bottom 20px
 
 /* Custom page CSS
 -------------------------------------------------- */
@@ -92,10 +98,26 @@ code
   width 100%
 
 svg
-  // display none
+  .outline, .sites
+    opacity 0
   .outline
-    opacity .1
     fill $green
     stroke $gHover
+    
+  &.showOutline
+    .outline
+      opacity .1
+    .sites
+      opacity 1
+      
+
+.nav>li>a 
+    position relative
+    display block
+    padding 10px 10px
+    
+img
+  &.bio
+    width 400px
 
 /*# sourceMappingURL=index.css.map */

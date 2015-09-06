@@ -4,20 +4,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="The Gowanus Canal is a heavily polluted waterway that runs through Brooklyn NY. A designated superfund site, it is slated for cleanup but nearby residents are concerned about the results. Our team is developing a biosensor for waste pollution, giving the community real time access to data on the health of the canal. Additionally we have mined the canal for extremophiles with interesting properties">
+    <meta name="author" content="genspace">
 
-    <title>Sticky Footer Navbar Template for Bootstrap</title>
+    <title>Gowanus SuperFUNd - Genspace iGEM 2015 </title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <style>
-
-    </style>
-
   </head>
 
   <body>
@@ -35,7 +29,7 @@
           <a class="navbar-brand" href="#"><img id="logo" src="logo_600.gif" alt=""></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav"> 
+          <!-- <ul class="nav navbar-nav"> 
             <li class="active"><a href="http://2015.igem.org/Team:Genspace">HOME</a></li>
 
             <li><a href="http://2015.igem.org/Team:Genspace/Team">TEAM</a></li>
@@ -69,6 +63,41 @@
             <li><a href="http://2015.igem.org/Team:Genspace/Practices">HUMAN PRACTICES</a></li>
 
             <li><a href="http://2015.igem.org/Team:Genspace/Safety">SAFETY</a></li>
+          </ul> -->
+          <ul class="nav navbar-nav"> 
+            <li class="active"><a href="./">HOME</a></li>
+
+            <li><a href="./team.html">TEAM</a></li>
+
+            <li class="dropdown">
+              <a href="./template.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PROJECT<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="./template.html">Description</a></li>
+                <li><a href="./template.html">Experiments &amp; Protocols</a>  </li>
+                <li><a href="./template.html">Results</a>  </li>
+                <li><a href="./template.html">Design</a></li>
+              </ul>
+            </li>
+            
+            <li class="dropdown">
+              <a href="./template.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PARTS<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="./template.html">Team Parts</a></li>
+                <li><a href="./template.html">Basic Parts</a>  </li>
+                <li><a href="./template.html">Composite Parts</a></li>
+                <li><a href="./template.html">Part Collection</a>  </li>
+              </ul>
+            </li>
+
+            <li><a href="./template.html">NOTEBOOK</a></li>
+         
+            <li><a href="./template.html">ATTRIBUTIONS</a></li>
+
+            <li><a href="./template.html">COLLABORATIONS</a></li>
+
+            <li><a href="./template.html">HUMAN PRACTICES</a></li>
+
+            <li><a href="./template.html">SAFETY</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -78,7 +107,7 @@
     <img id="mapimg" src="gowanus_canal.jpg" alt="">
 
     <div class="background"></div>
-    <svg id="map" x="0px" y="0px" viewBox="-53.157 2690.303 1624 3971.865">
+    <svg id="map" class="showOutline" x="0px" y="0px" viewBox="-53.157 2690.303 1624 3971.865">
     <rect x="-53.157" y="2690.32" opacity="0.5" fill="#FFFFFF" stroke="#8CD1E3" stroke-miterlimit="10" width="1624" height="3971.764"/>
     <polygon class="outline" stroke-linejoin="round" stroke-miterlimit="10" enable-background="new    " points="
       1123.361,4407.782 1119.957,4407.152 1119.576,4403.996 973.628,4391.798 910.539,4329.969 690.985,4380.441 673.786,4387.554 
@@ -104,7 +133,7 @@
       607.829,4391.805 613.111,4391.973 628.792,4382.263 644.718,4373.712 669.113,4361.515 690.985,4351.419 828.126,4310.067 
       830.423,4312.03 897.254,4295.187 915.585,4085.6 870.581,3976.245 872.684,3519.471 902.546,3519.471 902.125,3972.459 
       950.915,4078.871 927.782,4310.201 970.263,4356.888 1132.615,4371.189 1130.091,4395.583 1125.044,4395.164 "/>
-    <g>
+    <g class="sites">
       <circle id="gcss-01" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="887.405" cy="3544.708" r="10.516"/>
       <circle id="gcss-02" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="887.405" cy="3735.24" r="10.515"/>
       <circle id="gcss-03" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="887.405" cy="3818.519" r="10.515"/>
@@ -123,27 +152,20 @@
     </svg>
 
     <div id="content" class="container">
-      <div class="page-header">
-        <h1> <b>Super<span class="green">FUN</span>d Gowanus!</b>   </h1>
+      <div class="row">
+        <div class="col-md-5">
+          <img src="logo_600.gif" alt="">
+        </div>
+        <div class="col-md-7">
+          <img src="Genspace_logo.png" alt="" class="genspace">
+          <div class="page-header">
+            <h1> <b>Super<span class="green">FUN</span>d Gowanus!</b>   </h1>
+          </div>
+          <p class="lead">The Gowanus Canal is a heavily polluted waterway that runs through Brooklyn NY. A designated superfund site, it is slated for cleanup but nearby residents are concerned about the results. Our team is developing a biosensor for waste pollution, giving the community real time access to data on the health of the canal. Additionally we have mined the canal for extremophiles with interesting properties.</p>
+        </div>
       </div>
-      <p class="lead">The Gowanus Canal is a heavily polluted waterway that runs through Brooklyn NY. A designated superfund site, it is slated for cleanup but nearby residents are concerned about the results. Our team is developing a biosensor for waste pollution, giving the community real time access to data on the health of the canal. Additionally we have mined the canal for extremophiles with interesting properties.</p>
+      <div class="row">
 
-
-      <div class="section">
-        <h1>Section Text</h1>
-        <p class="lead">
-          Lo-fi taxidermy leggings, readymade irony messenger bag next level dreamcatcher blog Austin ugh Intelligentsia salvia gastropub. Vinyl deep v single-origin coffee sriracha gastropub YOLO. Intelligentsia mlkshk heirloom taxidermy. American Apparel <code>pickled organic</code>, post-ironic fanny pack Brooklyn roof party kale chips jean shorts narwhal.</p> 
-
-
-        <p>Swag butcher actually, sartorial wolf migas distillery before they sold out tilde. Art party irony small batch, pork belly Odd Future Vice cred quinoa +1 Truffaut trust fund listicle hashtag artisan hoodie. Organic quinoa Pitchfork, twee next level leggings forage.<a href="http://genspace.org">External link</a>
-        </p>
-
-        <p>
-          Authentic meggings Thundercats drinking vinegar, messenger bag Blue Bottle before they sold out sriracha meh hella +1 cronut Vice single-origin coffee retro. Normcore Godard Schlitz cliche, pour-over leggings messenger bag tousled Shoreditch. Umami cray authentic fashion axe, readymade meditation flannel post-ironic. Raw denim four loko irony master cleanse single-origin coffee, direct trade selvage DIY gentrify. Fixie <code>put a bird on it blog</code> actually, DIY bitters tilde hella. 
-        </p>
-        <p>
-          Scenester twee pop-up, narwhal deep v vinyl disrupt gastropub. Slow-carb shabby chic small batch lomo meggings 3 wolf moon.
-        </p>
       </div>
     </div>
 
