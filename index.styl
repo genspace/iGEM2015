@@ -1,5 +1,5 @@
 $green=rgb(31,174,107)
-
+$gHover = #1A8A55
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -34,7 +34,7 @@ a
   background-color #fff
   padding 0 5px
 a:hover
-  color #1A8A55
+  color $gHover
 
 body
   margin 0
@@ -63,8 +63,9 @@ code
   margin 60px 0
   border-top 1px
   border-color #e7e7e7
-  
 
+.navbar-default .navbar-nav>li>a:hover
+    color $green
 .navbar-brand
   float right
   
@@ -91,6 +92,10 @@ code
   width 100%
 
 svg
-  display none
+  // display none
+  .outline
+    opacity .1
+    fill $green
+    stroke $gHover
 
 /*# sourceMappingURL=index.css.map */

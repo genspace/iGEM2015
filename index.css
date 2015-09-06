@@ -61,6 +61,9 @@ code {
   border-top: 1px;
   border-color: #e7e7e7;
 }
+.navbar-default .navbar-nav>li>a:hover {
+  color: #1fae6b;
+}
 .navbar-brand {
   float: right;
 }
@@ -86,8 +89,10 @@ code {
   top: 0;
   width: 100%;
 }
-svg {
-  display: none;
+svg .outline {
+  opacity: 0.1;
+  fill: #1fae6b;
+  stroke: #1a8a55;
 }
 /*# sourceMappingURL=index.css.map */
 /*# sourceMappingURL=index.css.map */
