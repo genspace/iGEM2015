@@ -1,116 +1,142 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8' />
-    <title></title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.9.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.9.0/mapbox-gl.css' rel='stylesheet' />
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sticky Footer Navbar Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
     <style>
-        body {
-          margin:0;
-          padding:0;
-          width:100%;
-        }
-        #map {
-          position:absolute;
-          top:0;
-          bottom:0;
-          width:100%;
-        }
+
     </style>
-</head>
-<body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-<div>
-  <img id="mapimg" src="gowanus_canal.png" alt="">
-  <svg id='map' x="0px" y="0px" viewBox="-53.157 0 2724 6662.167" enable-background="new -53.157 0 2724 6662.167">
-    <rect x="-53.158" y="0.083" opacity="0.5" fill="#FFFFFF" stroke="#8CD1E3" stroke-miterlimit="10" width="2724" height="6662"/>
-    <polygon opacity="0.4" fill="#2E3192" stroke="#8CD1E3" stroke-linejoin="round" stroke-miterlimit="10" enable-background="new    " points="
-      1920.264,2880.851 1914.554,2879.795 1913.915,2874.5 1669.11,2854.042 1563.287,2750.335 1195.021,2834.994 1166.172,2846.924 
-      1143.52,2855.217 1117.417,2868.622 1084.023,2889.316 1068.032,2902.015 1066.621,2909.07 1070.149,2914.714 1354.814,2939.759 
-      1352.499,2961.003 1440.531,2969.743 1437.356,3006.781 1028.878,2966.215 1003.48,2995.493 983.021,3051.227 971.027,3114.015 
-      1013.356,3122.481 1232.059,3143.646 1226.768,3202.907 1179.5,3197.969 1168.211,3185.27 1114.594,3181.742 1111.067,3188.091 
-      1005.244,3175.393 999.045,3170.446 968.206,3170.455 950.568,3341.183 947.746,3341.183 919.879,3653.362 930.461,3661.123 
-      1011.714,3667.887 1010.094,3701.057 928.345,3694.282 918.748,3702.178 910.002,3821.27 907.886,3827.619 917.057,3848.078 
-      905.769,3906.633 895.893,3938.027 897.953,3959.901 900.831,4046.086 991.368,4346.154 1043.645,4353.455 1030.259,4474.287 
-      1076.819,4613.967 1045.074,4823.486 991.106,4813.962 952.332,4838.212 890.982,4951.79 933.964,4972.692 863.066,5063.696 
-      808.656,5080.92 751.956,5174.805 1381.274,5318.718 1335.015,5643.583 1311.369,5631.605 1299.036,5680.617 611.217,5555.751 
-      594.041,5656.878 789.484,5702.915 772.062,5784.32 1004.343,5827.583 989.656,5877.882 612.842,5805.419 567.286,5779.806 
-      324.343,5733.419 322.676,5752.252 318.676,5752.086 317.843,5779.586 330.843,5782.583 335.343,5790.583 331.805,5801.574 
-      266.994,5790.123 262.229,5806.789 592.343,5876.083 590.974,5882.509 644.851,5894.422 635.556,5961.036 866.247,6005.435 
-      878.809,5942.611 911.742,5949.395 909.625,5956.802 991.842,5973.81 996.043,5968.443 1049.305,5977.966 1042.956,6030.876 
-      638.73,5972.677 618.625,6052.149 751.343,6073.083 723.843,6198.583 252.343,6120.583 159.843,6198.583 115.21,6276.675 
-      107.843,6351.583 122.438,6392.065 663.843,6532.583 638.843,6662.083 53.843,6662.083 -53.157,6636.583 -53.158,5127.583 
-      13.2,5090.728 55.843,5381.583 79.843,5376.583 34.843,5079.583 73.843,5062.583 27.843,4559.583 120.843,4546.583 
-      251.986,5502.061 272.485,5499.561 219.988,5117.083 680,5044.763 662.012,4767.404 783.78,4751.307 765.713,4627.722 
-      904.334,4602.326 853.542,4292.278 848.057,4277.804 853.093,4267.139 841.782,4166.451 850.036,4165.901 826.761,4000.763 
-      850.741,4001.875 855.68,3906.633 835.22,3881.235 849.095,3803.716 847.174,3797.981 851.446,3790.58 899.419,3335.892 
-      885.31,3322.135 893.681,3312.82 922.349,3109.43 928.345,3053.343 959.387,2968.684 984.784,2928.824 997.836,2912.598 
-      1025.703,2880.498 1055.54,2854.054 1064.401,2854.336 1090.702,2838.048 1117.417,2823.706 1158.335,2803.247 1195.021,2786.314 
-      1425.055,2716.951 1428.906,2720.243 1541.005,2691.993 1571.753,2340.445 1496.265,2157.018 1499.792,1390.854 1549.882,1390.854 
-      1549.176,2150.668 1631.013,2329.157 1592.211,2717.177 1663.466,2795.486 1935.786,2819.473 1931.552,2860.392 1923.087,2859.686 
-      "/>
-    <g>
-      <circle id="gcss-01" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1524.484" cy="1433.184" r="17.637"/>
-      <circle id="gcss-02" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1524.484" cy="1752.771" r="17.638"/>
-      <circle id="gcss-03" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1524.484" cy="1892.458" r="17.637"/>
-      <circle id="gcss-04" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1528.719" cy="2174.655" r="17.637"/>
-      <circle id="gcss-05" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1592.211" cy="2442.741" r="17.637"/>
-      <circle id="gcss-06" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1575.985" cy="2600.771" r="17.637"/>
-      <circle id="gcss-07" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1561.875" cy="2720.704" r="17.637"/>
-      <circle id="gcss-08" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1858.182" cy="2847.693" r="17.637"/>
-      <circle id="gcss-09" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1279.679" cy="2795.486" r="17.637"/>
-      <circle id="gcss-10" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1103.307" cy="2952.105" r="17.637"/>
-      <circle id="gcss-11" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1025.703" cy="3156.697" r="17.637"/>
-      <circle id="gcss-12" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="917.057" cy="3403.619" r="17.637"/>
-      <circle id="gcss-13" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="952.332" cy="3679.465" r="17.638"/>
-      <circle id="gcss-14" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="895.893" cy="4202.233" r="17.637"/>
-    </g>
-    <g>
-      
-        <rect x="295.788" y="1227.98" opacity="0.8" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" enable-background="new    " width="317.953" height="507.153"/>
-      <polygon fill="#2E3192" stroke="#8CD1E3" stroke-linejoin="round" stroke-miterlimit="10" points="520.61,1391.429 
-        520.05,1391.325 519.988,1390.806 495.981,1388.8 485.603,1378.63 449.49,1386.932 446.66,1388.103 444.439,1388.915 
-        441.879,1390.23 438.605,1392.26 437.036,1393.504 436.896,1394.197 437.244,1394.75 465.159,1397.206 464.933,1399.29 
-        473.565,1400.147 473.254,1403.779 433.196,1399.801 430.706,1402.671 428.699,1408.138 427.523,1414.295 431.674,1415.125 
-        453.121,1417.201 452.602,1423.011 447.967,1422.527 446.86,1421.282 441.603,1420.936 441.256,1421.559 430.878,1420.314 
-        430.271,1419.829 427.246,1419.829 425.518,1436.571 425.241,1436.571 422.507,1467.186 423.545,1467.947 431.514,1468.609 
-        431.354,1471.861 423.337,1471.198 422.396,1471.972 421.539,1483.651 421.332,1484.273 422.23,1486.28 421.124,1492.022 
-        420.155,1495.101 420.358,1497.246 420.64,1505.698 429.518,1535.123 434.644,1535.838 433.332,1547.689 437.898,1561.386 
-        434.785,1581.933 429.492,1580.999 425.69,1583.377 419.675,1594.515 423.89,1596.565 416.936,1605.489 411.6,1607.178 
-        406.04,1616.385 467.754,1630.498 463.217,1662.354 460.899,1661.18 459.69,1665.987 392.238,1653.742 390.555,1663.659 
-        409.72,1668.174 408.012,1676.157 430.945,1680.931 429.181,1685.911 392.447,1678.232 390.475,1685.911 395.538,1686.955 
-        394.626,1693.485 417.248,1697.84 418.48,1691.679 421.71,1692.345 421.502,1693.071 429.564,1694.739 429.977,1694.212 
-        435.2,1695.146 434.578,1700.335 394.938,1694.627 392.965,1702.42 380.698,1702.42 380.859,1606.734 398.984,1603.829 
-        397.22,1576.434 409.161,1574.855 407.39,1562.736 420.983,1560.245 416.002,1529.839 415.464,1528.421 415.959,1527.375 
-        414.849,1517.5 415.658,1517.447 413.376,1501.254 415.727,1501.363 416.211,1492.022 414.206,1489.531 415.566,1481.93 
-        415.378,1481.367 415.797,1480.642 420.501,1436.053 419.118,1434.704 419.938,1433.79 422.75,1413.844 423.337,1408.344 
-        426.382,1400.043 428.873,1396.134 430.153,1394.542 432.885,1391.395 435.811,1388.802 436.68,1388.83 439.259,1387.232 
-        441.879,1385.826 445.891,1383.818 449.49,1382.16 472.047,1375.356 472.425,1375.68 483.418,1372.909 486.433,1338.436 
-        479.031,1320.447 479.376,1245.314 484.288,1245.314 484.219,1319.824 492.245,1337.328 488.439,1375.379 495.427,1383.059 
-        522.131,1385.41 521.718,1389.422 520.887,1389.353   "/>
-    </g>
-  </svg>
 
-</div>
-<script>
-  var map = d3.select('#map')
-  var img = d3.select('#mapimg')
-  size()
-  function size () {
-    img.style({
-      width:window.innerWidth+'px',
-    })
+  </head>
 
-    map.select('image').attr({
-      width:map.node().getBoundingClientRect().width,
-      height:img.node().getBoundingClientRect().height,
-    })
-  }
+  <body>
 
-  d3.select(window).on('resize.index',size)
-</script>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img id="logo" src="logo_600.gif" alt=""></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav"> 
+            <li class="active"><a href="http://2015.igem.org/Team:Genspace">HOME</a></li>
 
-</body>
-</html>
+            <li><a href="http://2015.igem.org/Team:Genspace/Team">TEAM</a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PROJECT<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://2015.igem.org/Team:Genspace/Description">Description</a></li>
+                <li><a href="http://2015.igem.org/Team:Genspace/Experiments">Experiments &amp; Protocols</a>  </li>
+                <li><a href="http://2015.igem.org/Team:Genspace/Results">Results</a>  </li>
+                <li><a href="http://2015.igem.org/Team:Genspace/Design">Design</a></li>
+              </ul>
+            </li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PARTS<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://2015.igem.org/Team:Genspace/Parts">Team Parts</a></li>
+                <li><a href="http://2015.igem.org/Team:Genspace/Basic_Part">Basic Parts</a>  </li>
+                <li><a href="http://2015.igem.org/Team:Genspace/Composite_Part">Composite Parts</a></li>
+                <li><a href="http://2015.igem.org/Team:Genspace/Part_Collection">Part Collection</a>  </li>
+              </ul>
+            </li>
+
+            <li><a href="http://2015.igem.org/Team:Genspace/Notebook">NOTEBOOK</a></li>
+         
+            <li><a href="http://2015.igem.org/Team:Genspace/Attributions">ATTRIBUTIONS</a></li>
+
+            <li><a href="http://2015.igem.org/Team:Genspace/Collaborations">COLLABORATIONS</a></li>
+
+            <li><a href="http://2015.igem.org/Team:Genspace/Practices">HUMAN PRACTICES</a></li>
+
+            <li><a href="http://2015.igem.org/Team:Genspace/Safety">SAFETY</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <img id="mapimg" src="gowanus_canal.jpg" alt="">
+    <div class="background"></div>
+
+    <div id="content" class="container">
+      <div class="page-header">
+        <h1> <b>Super<span class="green">FUN</span>d Gowanus!</b>   </h1>
+      </div>
+      <p class="lead">The Gowanus Canal is a heavily polluted waterway that runs through Brooklyn NY. A designated superfund site, it is slated for cleanup but nearby residents are concerned about the results. Our team is developing a biosensor for waste pollution, giving the community real time access to data on the health of the canal. Additionally we have mined the canal for extremophiles with interesting properties.</p>
+
+
+      <div class="section">
+        <h1>Section Text</h1>
+        <p class="lead">
+          Lo-fi taxidermy leggings, readymade irony messenger bag next level dreamcatcher blog Austin ugh Intelligentsia salvia gastropub. Vinyl deep v single-origin coffee sriracha gastropub YOLO. Intelligentsia mlkshk heirloom taxidermy. American Apparel <code>pickled organic</code>, post-ironic fanny pack Brooklyn roof party kale chips jean shorts narwhal.</p> 
+
+
+        <p>Swag butcher actually, sartorial wolf migas distillery before they sold out tilde. Art party irony small batch, pork belly Odd Future Vice cred quinoa +1 Truffaut trust fund listicle hashtag artisan hoodie. Organic quinoa Pitchfork, twee next level leggings forage.<a href="http://genspace.org">External link</a>
+        </p>
+
+        <p>
+          Authentic meggings Thundercats drinking vinegar, messenger bag Blue Bottle before they sold out sriracha meh hella +1 cronut Vice single-origin coffee retro. Normcore Godard Schlitz cliche, pour-over leggings messenger bag tousled Shoreditch. Umami cray authentic fashion axe, readymade meditation flannel post-ironic. Raw denim four loko irony master cleanse single-origin coffee, direct trade selvage DIY gentrify. Fixie <code>put a bird on it blog</code> actually, DIY bitters tilde hella. 
+        </p>
+        <p>
+          Scenester twee pop-up, narwhal deep v vinyl disrupt gastropub. Slow-carb shabby chic small batch lomo meggings 3 wolf moon.
+        </p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+    <script>
+      var map = d3.select('#map')
+      var img = d3.select('#mapimg')
+      var content = d3.select('#content')
+      size()
+      function size () {
+        img.style({
+          width:window.innerWidth+'px',
+        })
+        content.style({
+          height:img.node().getBoundingClientRect().height,
+        })
+
+        // map.select('image').attr({
+        //   width:map.node().getBoundingClientRect().width,
+        //   height:img.node().getBoundingClientRect().height,
+        // })
+      }
+
+      d3.select(window).on('resize.index',size)
+    </script>
+</body></html>
+
