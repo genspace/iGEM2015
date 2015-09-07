@@ -29,13 +29,6 @@ body
 
 /* Custom page CSS
 -------------------------------------------------- */
-a
-  color $green
-  background-color #fff
-  padding 0 5px
-a:hover
-  color $gHover
-
 body
   margin 0
   padding 0
@@ -83,6 +76,12 @@ code
 #content
   z-index 1
   position relative
+  a
+    color $green
+    background-color #fff
+    padding 0 5px
+  a:hover
+    color $gHover
 
 #mapimg,
 #map
@@ -104,12 +103,21 @@ svg
     .sites
       opacity 1
       
-
-.nav>li>a 
+.nav>li>a
     position relative
     display block
     padding 10px 10px
-    
+    color $green
+    text-transform uppercase
+  :hover
+    color $gHover
+
+.dropdown-menu
+  text-transform capitalize
+
+.expand>.dropdown-menu
+  display block
+
 img
   &.bio
     width 100%
@@ -119,6 +127,7 @@ img
     &.genspace
       max-width 420px
       margin-bottom 20px
+      
   &.intro
     img
       width 100%
