@@ -83,12 +83,26 @@ code
   a:hover
     color $gHover
 
+.mapBackground
+  background url("../img/gowanus_canal.jpg")
+  background-size cover
+  position fixed
+  top 0
+  width 100%
+  height 100%
+  
 #mapimg,
 #map
   z-index 0
   position absolute
   top 0
   width 100%
+  display none
+
+.showMap
+  #mapimg,
+  #map
+    display block
 
 svg
   .outline, .sites
@@ -109,7 +123,7 @@ svg
     padding 10px 10px
     color $green
     text-transform uppercase
-  :hover
+.nav>li>a:hover
     color $gHover
 
 .dropdown-menu
@@ -117,6 +131,10 @@ svg
 
 .expand>.dropdown-menu
   display block
+
+.heading
+  border-bottom 2px solid #e7e7e7
+  padding 10px 0
 
 img
   &.bio

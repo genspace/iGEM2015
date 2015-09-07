@@ -14,7 +14,7 @@
     <link href="style/index.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="showMap">
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -89,9 +89,9 @@
     </nav>
 
     <!-- Begin page content -->
+    <div class="mapBackground"></div>
     <img id="mapimg" src="img/gowanus_canal.jpg" alt="">
 
-    <div class="map-background"></div>
     <div class="background"></div>
     <svg id="map" class="showOutline" x="0px" y="0px" viewBox="-53.157 2690.303 1624 3971.865">
     <rect x="-53.157" y="2690.32" opacity="0.5" fill="#FFFFFF" stroke="#8CD1E3" stroke-miterlimit="10" width="1624" height="3971.764"/>
@@ -160,14 +160,9 @@
       </div>
     </footer>
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/d3.min.js" charset="utf-8"></script>
+    <script src="js/d3-jetpack.js"></script>
     
-
     <script>
       d3.selectAll('.dropdown')
         .on('mouseover',function(){ this.classList.add('expand') })
