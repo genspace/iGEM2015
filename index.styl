@@ -25,13 +25,7 @@ body
 .navbar-default
   background-color #fff
   border-color #e7e7e7
-  
-.row
-  img
-    width 100%
-    &.genspace
-      max-width 420px
-      margin-bottom 20px
+
 
 /* Custom page CSS
 -------------------------------------------------- */
@@ -118,6 +112,19 @@ svg
     
 img
   &.bio
-    width 400px
+    width 100%
+
+.row
+  img
+    &.genspace
+      max-width 420px
+      margin-bottom 20px
+  &.intro
+    img
+      width 100%
+      max-width 600px
+      +below(992px)
+        margin 20px auto
+        display block
 
 /*# sourceMappingURL=index.css.map */
