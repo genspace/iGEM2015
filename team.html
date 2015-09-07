@@ -329,17 +329,20 @@
       var map = d3.select('#map')
       var img = d3.select('#mapimg')
       var content = d3.select('#content')
-      members.forEach(function(m,i){
 
-      })
 
       var sections = d3.select('#content').selectAll('div').data(members).enter().append('div')
-        .classed('section',true)
+        .classed('section row',true)
 
-      sections.append('h1').text(function(d){return d.name})
-      sections.append('img').classed('bio',true).attr('src',function(d){return d.img})
-      sections.append('code').text(function(d){return d.role})
-      sections.append('p').classed('lead',true).text(function(d){return d.desc})
+      var r = sections.append('div').classed('col-md-5',true)  
+      r.append('img').classed('bio',true).attr('src',function(d){return d.img})
+      
+      var l = sections.append('div').classed('col-md-7',true)  
+      l.append('h3').text(function(d){return d.name})
+      l.append('p').classed('lead',true).text(function(d){return d.role})
+      l.append('p').classed('description',true).text(function(d){return d.desc})
+      
+
       size()
       function size () {
         img.style({
