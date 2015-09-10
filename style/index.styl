@@ -22,10 +22,37 @@ body
   width 100%
   min-height 80px
 
+.navbar>.container .navbar-brand
+  padding-top 8px
+
 .navbar-default
   background-color #fff
   border-color #e7e7e7
 
+.navbar-default .navbar-nav>li>a:hover
+    color $green
+    
+.navbar-brand
+  float right
+  +below(768px)
+    float left
+      
+.nav>li>a
+    position relative
+    display block
+    color $green
+    text-transform uppercase
+    padding 10px
+    +below(1200px)
+      padding 5px
+
+.nav>li>a:hover
+    color $gHover
+
+.lead
+  font-size 21px
+  +below(1200px)
+    font-size 18px
 
 /* Custom page CSS
 -------------------------------------------------- */
@@ -57,11 +84,6 @@ code
   border-top 1px
   border-color #e7e7e7
 
-.navbar-default .navbar-nav>li>a:hover
-    color $green
-.navbar-brand
-  float right
-  
 #logo
   width 100px
   height 100px
@@ -94,7 +116,7 @@ code
 #mapimg,
 #map
   z-index 0
-  position absolute
+  position fixed
   top 0
   width 100%
   display none
@@ -103,7 +125,8 @@ code
   #mapimg,
   #map
     display block
-
+    position absolute
+    
 svg
   .outline, .sites
     opacity 0
@@ -116,15 +139,6 @@ svg
       opacity .1
     .sites
       opacity 1
-      
-.nav>li>a
-    position relative
-    display block
-    padding 10px 10px
-    color $green
-    text-transform uppercase
-.nav>li>a:hover
-    color $gHover
 
 .dropdown-menu
   text-transform capitalize
@@ -141,6 +155,8 @@ img
     width 100%
 
 .row
+  z-index 1
+  position relative
   img
     &.genspace
       max-width 420px
@@ -153,5 +169,24 @@ img
       +below(992px)
         margin 20px auto
         display block
+.parts
+  .row
+    background-color rgba(255,255,255,0.8)
+    z-index 0
+    position relative
+    border-top 2px solid #e7e7e7
+  .header 
+    border-top 0px solid #e7e7e7
+    padding-bottom 20px
+  .section
+    height 640px  
+    margin 20px 0
+  svg
+    pointer-events none
+    
+.construct-map
+  transform scale(1.4) translate(-50px, 20px)
+  +below(1200px)
+    transform scale(1.2) translate(-70px, 20px)
 
 /*# sourceMappingURL=index.css.map */
