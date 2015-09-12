@@ -2,7 +2,7 @@
   {
     "name":"David Apterman",
     "role":"student member",
-    "img":"IGEM-logo-md.png",
+    "img":"DaveApterman.jpg",
     "desc":"David Apterman is a rising sophomore at Stuyvesant High School. He has been passionate about science from a young age and thus was overjoyed when he discovered iGem. He is very interested in molecular biology and genetic engineering and the synthetic biology found in iGem was exactly what he wanted to do over the summer. He would like to pursue a career in research and would love to one day lead a pioneering study."
   },
   {
@@ -38,7 +38,7 @@
   {
     "name":"Dr. Christal Gordon",
     "role":"adult member",
-    "img":"better christal.jpg",
+    "img":"christal.jpg",
     "desc":"Dr. Christal Gordon is an engineer and educator.  She received a dual Electrical and Computer Engineering B.S. from Polytechnic University and her M.S. and Ph.D. in Electrical Engineering (minor in Neuroscience) from the Georgia Institute of Technology.  Her specialties include designing, prototyping, and programming. She has designed bio-inspired and bio-interfacing systems, high-speed electronics, and models of complex systems.  Her work revolves around creating systems for use by the general public, engineers, and neuroscientists.  Applications of these systems include low-power consumer electronics and neural prosthetics.  She's passionate about bringing science to the general public."
   },
   {
@@ -72,6 +72,12 @@
     "desc":""
   },
   {
+    "name":"Blacki Migliozzi",
+    "role":"adult member",
+    "img":"blacki.jpeg",
+    "desc":"Blacki Migliozzi is a data visualization developer for Bloomberg Graphics. He has studied Human-Computer Interaction, Discrete math and nano-materials. He has previously spent time designing and prototyping small-scale agricultural technologies. As a member of Genspace he is currently interested in the intersection of biotech and agrarian practices."
+  },
+  {
     "name":"Will Shindel",
     "role":"adult member",
     "img":"will.JPG",
@@ -80,7 +86,7 @@
   {
     "name":"Danny Swift",
     "role":"student member",
-    "img":"IGEM-logo-md.png",
+    "img":"DannySwift.JPG",
     "desc":"Danny is a rising senior at Pomona College, studying molecular biology, applied mathematics, and economics. Never one to say no to the opportunity to take something apart and put it back together, the iGEM competition was a natural draw for Danny. After graduating, he hopes to combine his interests in biology and finance within the emerging biotechnology sector."
   },
   {
@@ -92,7 +98,7 @@
   {
     "name":"Dr. Julie Wolf",
     "role":"mentor",
-    "img":"IGEM-logo-md.png",
+    "img":"julie.png",
     "desc":"Julie has been involved with Genspace since 2012. Her doctorate and postdoctorate work is in medical mycology, but she is a fan of microbiology and molecular biology of all sorts. She enjoys coffee, podcasts, data, citizen science, and infographics."
   },
   {
@@ -116,13 +122,13 @@
   {
     "name":"Daniel Hack",
     "role":"student member",
-    "img":"IGEM-logo-md.png",
+    "img":"danhack.jpg",
     "desc":"Daniel Hack is a rising junior at Suffern Senior High School. At his school, Daniel took a science research course that led to his involvement in Genspace. While doing research on synthetic biology, he heard of the IGEM competition and was emphatic to hear that Genspace had a team. Daniel is very passionate about biology and is looking forward to the giant IGEM Jamboree."
   },
   {
     "name":"Jane Kaitlin Young",
     "role":"student member",
-    "img":"IGEM-logo-md.png",
+    "img":"kaitlin.JPG",
     "desc":"Kaitlin Young is a rising sophomore at The Dalton School in Manhattan. She is very excited to be on Genspace's iGEM team this year. She really enjoys learning about synthetic biology and meeting new people with similar interests. While not in the lab, she enjoys swimming, writing short stories and learning all things related to technology.  "
   },
   {

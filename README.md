@@ -15,9 +15,10 @@
 ### Team page
 
 - [x] arrange bios correctly
+- [x] Add bio image emailed
 - [ ] confirm bio images
-- [ ] Add bio image emailed
 - [ ] crop bio images 
+- [ ] update bio data
 
 ### Notebook page
 
