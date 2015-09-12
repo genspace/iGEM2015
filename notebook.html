@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="The Gowanus Canal is a heavily polluted waterway that runs through Brooklyn NY. A designated superfund site, it is slated for cleanup but nearby residents are concerned about the results. Our team is developing a biosensor for waste pollution, giving the community real time access to data on the health of the canal. Additionally we have mined the canal for extremophiles with interesting properties">
+    <meta name="author" content="genspace">
+
+    <title>Gowanus SuperFUNd - Genspace iGEM 2015 </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="style/bootstrap.min.css" rel="stylesheet">
+    <link href="style/index.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img id="logo" src="img/logo_600.gif" alt=""></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav"> 
+            <li class="active"><a href="./">HOME</a></li>
+
+            <li><a href="./team.html">TEAM</a></li>
+
+            <li class="dropdown">
+              <a href="./template.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PROJECT<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="./template.html">Description</a></li>
+                <li><a href="./template.html">Experiments &amp; Protocols</a>  </li>
+                <li><a href="./template.html">Results</a>  </li>
+                <li><a href="./template.html">Design</a></li>
+              </ul>
+            </li>
+            
+            <li class="dropdown">
+              <a href="./parts.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PARTS<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="./template.html">Team Parts</a></li>
+                <li><a href="./template.html">Basic Parts</a>  </li>
+                <li><a href="./template.html">Composite Parts</a></li>
+                <li><a href="./template.html">Part Collection</a>  </li>
+              </ul>
+            </li>       
+
+            <li><a href="./notebook.html">NOTEBOOK</a></li>
+            <li><a href="./template.html">ATTRIBUTIONS</a></li>
+            <!-- <li class="dropdown">
+              <a href="./template.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NOTEBOOK<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="./template.html">notebook</a></li>
+                <li><a href="./template.html">attributions</a></li>
+              </ul>
+            </li> -->
+
+            <li><a href="./template.html">collaborations</a></li>
+
+            <li><a href="./template.html">HUMAN PRACTICES</a></li>
+            <li><a href="./template.html">SAFETY</a></li>
+            <!-- <li><a href="./template.html">MODELING</a></li>
+            <li><a href="./template.html">MEASUREMENT</a></li>
+            <li><a href="./template.html">SOFTWARE</a></li>
+            <li><a href="./template.html">ENTREPRENEURSHIP</a></li> -->
+
+            <!-- <li class="dropdown">
+              <a href="./template.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MORE<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="./template.html">human practices</a></li>
+                <li><a href="./template.html">safety</a></li>
+                <li><a href="./template.html">modeling</a></li>
+                <li><a href="./template.html">measurement</a></li>
+                <li><a href="./template.html">software</a></li>
+                <li><a href="./template.html">entrepreneurship</a></li>
+              </ul>
+            </li> -->
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+    <!-- Begin page content -->
+    <div class="mapBackground"></div>
+    <img id="mapimg" src="img/gowanus_canal.jpg" alt="">
+    <div class="background"></div>
+    <svg id="map" x="0px" y="0px" viewBox="-53.157 2690.303 1624 3971.865">
+    <rect x="-53.157" y="2690.32" opacity="0.5" fill="#FFFFFF" stroke="#8CD1E3" stroke-miterlimit="10" width="1624" height="3971.764"/>
+    <polygon class="outline" stroke-linejoin="round" stroke-miterlimit="10" enable-background="new    " points="
+      1123.361,4407.782 1119.957,4407.152 1119.576,4403.996 973.628,4391.798 910.539,4329.969 690.985,4380.441 673.786,4387.554 
+      660.28,4392.5 644.718,4400.491 624.81,4412.828 615.276,4420.4 614.435,4424.604 616.539,4427.97 786.25,4442.901 784.87,4455.566 
+      837.354,4460.777 835.46,4482.857 591.933,4458.674 576.791,4476.127 564.594,4509.355 557.443,4546.79 582.68,4551.836 
+      713.066,4564.455 709.912,4599.785 681.731,4596.841 675.001,4589.27 643.035,4587.167 640.933,4590.952 577.843,4583.381 
+      574.147,4580.432 555.762,4580.438 545.246,4682.222 543.564,4682.222 526.95,4868.338 533.259,4872.964 581.7,4876.997 
+      580.734,4896.773 531.997,4892.735 526.276,4897.442 521.062,4968.443 519.8,4972.227 525.268,4984.424 518.538,5019.333 
+      512.65,5038.05 513.878,5051.091 515.594,5102.473 569.57,5281.368 600.737,5285.721 592.756,5357.758 620.515,5441.034 
+      601.588,5565.945 569.414,5560.268 546.297,5574.724 509.723,5642.437 535.347,5654.899 493.079,5709.154 460.641,5719.423 
+      426.837,5775.396 802.025,5861.194 774.446,6054.873 760.349,6047.731 752.997,6076.952 342.931,6002.508 332.691,6062.798 
+      449.211,6090.245 438.824,6138.777 577.306,6164.57 568.549,6194.556 343.9,6151.356 316.74,6136.085 171.902,6108.429 
+      170.908,6119.659 168.523,6119.56 168.027,6135.955 175.777,6137.742 178.46,6142.512 176.351,6149.064 137.711,6142.236 
+      134.871,6152.172 331.679,6193.484 330.862,6197.315 362.983,6204.418 357.441,6244.132 494.976,6270.601 502.465,6233.147 
+      522.099,6237.192 520.837,6241.608 569.854,6251.748 572.358,6248.547 604.111,6254.224 600.327,6285.769 359.334,6251.072 
+      347.348,6298.453 426.472,6310.932 410.077,6385.752 128.977,6339.251 73.83,6385.752 47.221,6432.31 42.828,6476.969 
+      51.53,6501.103 374.306,6584.877 359.401,6662.083 10.634,6662.083 -53.157,6646.88 -53.157,5747.243 -13.596,5725.269 
+      11.827,5898.672 26.135,5895.692 -0.692,5718.625 22.559,5708.492 -4.866,5408.612 50.579,5400.86 128.765,5970.499 
+      140.986,5969.008 109.688,5740.982 383.938,5697.866 373.214,5532.51 445.81,5522.914 435.039,5449.234 517.683,5434.093 
+      487.401,5249.248 484.131,5240.62 487.133,5234.261 480.39,5174.233 485.311,5173.904 471.435,5075.453 485.731,5076.116 
+      488.675,5019.333 476.478,5004.191 484.75,4957.977 483.604,4954.558 486.151,4950.145 514.752,4679.069 506.341,4670.867 
+      511.331,4665.313 528.422,4544.056 531.997,4510.618 550.503,4460.146 565.646,4436.381 573.427,4426.708 590.04,4407.57 
+      607.829,4391.805 613.111,4391.973 628.792,4382.263 644.718,4373.712 669.113,4361.515 690.985,4351.419 828.126,4310.067 
+      830.423,4312.03 897.254,4295.187 915.585,4085.6 870.581,3976.245 872.684,3519.471 902.546,3519.471 902.125,3972.459 
+      950.915,4078.871 927.782,4310.201 970.263,4356.888 1132.615,4371.189 1130.091,4395.583 1125.044,4395.164 "/>
+    <g class="sites">
+      <circle id="gcss-01" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="887.405" cy="3544.708" r="10.516"/>
+      <circle id="gcss-02" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="887.405" cy="3735.24" r="10.515"/>
+      <circle id="gcss-03" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="887.405" cy="3818.519" r="10.515"/>
+      <circle id="gcss-04" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="889.929" cy="3986.76" r="10.515"/>
+      <circle id="gcss-05" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="927.782" cy="4146.587" r="10.515"/>
+      <circle id="gcss-06" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="918.108" cy="4240.802" r="10.515"/>
+      <circle id="gcss-07" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="909.696" cy="4312.304" r="10.515"/>
+      <circle id="gcss-08" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="1086.349" cy="4388.013" r="10.515"/>
+      <circle id="gcss-09" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="741.456" cy="4356.888" r="10.516"/>
+      <circle id="gcss-10" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="636.306" cy="4450.261" r="10.516"/>
+      <circle id="gcss-11" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="590.04" cy="4572.235" r="10.515"/>
+      <circle id="gcss-12" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="525.268" cy="4719.446" r="10.516"/>
+      <circle id="gcss-13" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="546.297" cy="4883.901" r="10.515"/>
+      <circle id="gcss-14" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="512.65" cy="5195.565" r="10.516"/>
+    </g>
+    </svg>
+
+    <div id="content" class="container">
+      <a href="">Week 1: June 30 - July 2</a>
+      <a href="">Week 2: July 6 - July 10</a>
+      <div class="week row">
+        <h3 class="header">Week 1: June 30 - July 2</h3>
+        <div class="section entry">
+          <h2 class="lead">
+            Tuesday (6/30/2015)
+          </h2>
+          <p><b>Objective:</b> Safety Training</p>
+          <p><b>Purpose:</b> Our safety</p> 
+          <p>
+           <b>Summary:</b> Today was entirely dedicated to researching, splitting the team in two to make the most efficient use of our time. The adults and undergraduates focused on quorum sensing. The high school students looked through different promoters that activated in the presence of molecules common to human sewage.
+          </p>
+          <p>Changes in chemicals after human waste in sewage water (mg/l)</p>
+          <ul>
+            <li>Bicarbonate (HCO3) 50-100</li>
+            <li>Chloride (Cl) 20-50</li>
+            <li>Nitrate (NO3) 20-40 </li>
+            <li>Phosphate (PO4) 5-15</li>
+            <li>Sulfate (SO4) 15-30</li>
+          </ul>
+        </div>
+        <div class="section entry">
+          <h2 class="lead">
+            Wednesday (7/1/2015)
+          </h2>
+          <p><b>Objective:</b> 60% Glycerol stock</p>
+          <p><b>Purpose:</b> Student training</p> 
+          <p>
+            <b>Summary:</b> We have finally done stuff! Student team members continued their initial safety training, as well as learning how to do basic techniques (e.g. 60% Glycerol stock). Meanwhile, our senior team members came up with a more detailed plan than just "biosensor". Miranda came up with multiple plans for the system. By modifying Lsr Operons, we hope to use Quorum sensing to detect the presence of E.coli bacteria other than those that we use. -80 Competent cells
+          </p>
+          <ol>
+            <li>1.5 ml of culture into fresh 2.0 ml cryo tubes </li>
+            <li>Add 0.5 ml of 60% Glycerol</li>
+            <li>Vortex to mix</li>
+            <li>Flash freeze in Liquid Nitrogen</li>
+            <li>Transfer cryo tubes to long-term storage in -80^C freezer</li>
+          </ol>
+          <p>The purpose of this was teaching the kids how to make competent cells YAAAAY</p>
+          <p>We also spent the day researching various E. coli quorum sensing pathways. Many bacterial species, such as E. coli, use quorum sensing to regulate gene expression in response to changes in local population size.  We stumbled upon the AI-2 pathway, which is shared by gram negative and gram positive bacteria. The system is based on an Lsr regulon, and is comprised of multiple interacting parts, including a promoter, LsrR, LsrK, and LsrACDB.</p>
+          <p>LsrA, C, D, and B encode subunits of a transmembrane transport protein that brings AI-2 into the cell, where it is phosorphorylated by LsrK.  Phospho-AI-2 binds to LsrR, the repressor for the Lsr promoter, allowing transcription of the regulon.</p>
+          <p>We hope to couple the Lsr regulon with a downstream fluorescent gene to create a quorum sensing-based “biosensor,” that fluoresces in high concentrations of E. coli. In doing so, we provide the Gowanas community with an instantaneous means of evaluating the canal’s potentially dangerous contents. </p>
+          <p>In order to prevent the biosensor from self-inducing, we must knock out luxS, the gene that produces AI-2.</p>
+          <img src="img/Genspace-7-1-15-0.jpeg" alt="">
+          <p>This is a diagram of the E. coli AI-2 quorum sensing pathway (above). It was drawn by some of the team members who had been researching quorum sensing, in order to explain the results of this research to the rest of the team.</p>
+          <img src="img/Genspace-7-1-15-1.jpeg" alt="">
+          <p>This is a flowchart of our preliminary plan.</p>
+          <img src="img/Genspace-7-1-15-2.jpeg" alt="">
+          <p>A better diagram of the Lsr pathway</p>
+        </div>
+        <div class="section entry">
+          <h2 class="lead">
+            Thursday (7/2/2015)
+          </h2>
+          <p><b>Objective:</b> Waking parts from the registry</p>
+          <p><b>Purpose:</b>  iGem Parts</p> 
+          <ol>
+           <li>Puncture the foil covering with a clean pipette tip.</li>
+           <li>Using a fresh tip, pipette 10μL from a fresh aliquot of Molecular Biology Grade Water into wells 18I (K117002) and 18K (K117008), then pipette up and down to mix.  The DNA contains a red dye, so the water should turn red as you mix.</li>
+           <li>Record the well you opened up and continue by transforming the DNA. </li>
+          </ol>
+          <p>
+            <b>Summary:</b> The "Quorum Sensing" group looked up two parts we need for the sensing project (Lsr Promoter: pLsrA {BBa_K117002} pLsrA-YFP {BBa_K117008}), and decided to teach the students how to take DNA out of the registry.
+          </p>
+          <img src="http://2015.igem.org/wiki/images/thumb/f/f5/Testtube.JPG/450px-Testtube.JPG" alt="">
+          <p>In pursuing further quorum sensing research, we came across the Lux operon. Like Lsr, the Lux system is important in bacterial quorum sensing. The operon consists of a Lux promoter and its regulator, LuxR. The system is controlled by the signal AHL (N-Acyl homoserine lactone), emitted by the gram negative bacterial species V. fischeri. After diffusing through the cell membrane, two molecules of AHL bind with two molecules of LuxR protein. The complex then binds to the promoter, upregulating transcription of downstream genes.</p>
+          <p>We plan to ligate the LuxR operon with a fluorescent protein gene. If the circuit works properly, the bacteria will fluoresce when surrounding bacterial population sizes increase.</p>
+        </div>
+      </div>
+      <div class="week row">
+        <h3 class="header">Week 2: July 6 - July 10</h3>
+        <div class="section entry">
+          <h2 class="lead">
+            Monday (7/6/2015)
+          </h2>
+          <p><b>Objective:</b> 3A assembly </p>
+          <p><b>Purpose:</b> Student training</p> 
+          <ol>
+           <li>In order, place following into PCR tube: 
+            <ol>
+              <li>33 ul water</li>
+              <li>5 ul 10x NE (New England) Buffer 2.1</li>
+              <li>1 ul Enzyme #1</li>
+              <li>1 ul Enzyme #2</li>
+              <li>DNA- 500 ng (10 ul) part or 500 ng (3 ul) DNA backbone</li>
+            </ol>
+           </li>
+           <li>Incubate at 37^C for 10 min.</li>
+           <li>Heat inactivate at 80^C for 20 min.</li>
+           <li>Hold at 4^C</li>
+          </ol>
+          <p>We bought a container of Top Fin Liquid Saltwater Concentrate to test how E.coli withstand various salt concentrations.</p>
+        </div>
+        <div class="section entry">
+          <h2 class="lead">
+            Tuesday (7/7/2015)
+          </h2>
+          <p><b>Objective:</b> Plasmid Prep </p>
+          <p><b>Purpose:</b> Student training</p> 
+          <ol>
+           <li>Place TE buffer into incubator at 37^C</li>
+           <li>Centrifuge 1.5 ml of the overnight LB culture for 30 seconds</li>
+           <li>Add 250 ul Resuspension Buffer (R3) with RNase to cell pellet by pipetting up and down</li>
+           <li>Add 250 ul Lysis Buffer (L7). Mix gently by inverting 5x. Incubate at room temp. for exactly 5 min.</li>
+           <li>Add 350 ul Precipitation Buffer (N4). Invert 5x. Place in centrifuge at 11,000 RPM for 10 min.</li>
+           <li>Load supernatant into 2 ml wash tube with spin column. Place in centrifuge for 1 min.</li>
+           <li>Add 500 ul wash buffer (w10) with ethanol. Incubate at room temp. for 1 min. Centrifuge for 1 min.</li>
+           <li>Add 700 ul wash buffer (wq). Centrifuge for 1 min.</li>
+           <li>Place spin column in a clean 1.5 ml recovery tube. Add 75 ul of TE to center, incubate for 1 min. at room temp.</li>
+          </ol>
+          <p>
+            Plates have been streaked with E.coli K12 in preparation for the salt concentration experiment.
+          </p>
+        </div>
+        <div class="section entry">
+          <h2 class="lead">
+            Wednesday (7/8/2015)
+          </h2>
+          <p><b>Objective:</b> Pouring Electrophoresis gels</p>
+          <p><b>Purpose:</b> Student training</p> 
+          <p><b>Summary:</b> LB plates were made by students as a review of our knowledge, using three antibiotics: Ampicillin. Chloramphenicol, and Kanamycin.</p>
+          <ol>
+            <li>0.35 g agarose (0.7%)</li>
+            <li>50ml TAE water</li>
+            <li>Foil over flask and poke holes</li>
+            <li>Microwave: Power level 70%; 4 min.; stop when boils</li>
+            <li>Once lukewarm, 5 ul Phenix dye (10,000 in water)</li>
+          </ol>
+          <p>
+            Plates have been streaked with E.coli K12 in preparation for the salt concentration experiment.
+          </p>
+        </div>
+        <div class="section entry">
+          <h2 class="lead">
+            Thursday (7/9/2015)
+          </h2>
+          <p><b>Objective:</b> Genomikon kit,  Design saline experiment</p>
+          <p><b>Purpose:</b> Progress</p> 
+          <p>NOTICE: We are assuming that the LSC (Liquid Salt Concentration) has a salinity of 31.5% because of its claim of mimicking saltwater conditions in a 9x dilution. Saltwater usually as a salinity of 3.5%</p>
+          <ol>
+           <li>Set Seawater concentration</li>
+           <li>Set E.coli concentration</li>
+           <li>Samples at timepoints</li>
+          </ol>
+          <img src="img/Genspace-7-9-15-0.jpeg" alt="">
+          <p>
+            Math behind dilution concentrations
+          </p>
+          <p>Big picture experiment design</p>
+          <p>Genomikon: Iron bead binds to DNA Anchor connected to the bead - Sticky ends X,X’; Z,Z’ - Cap with amp resistance - Sodium Hydroxide disconnects the iron bead to the gene - DNA will circularize</p>
+        </div>
+        <div class="section entry">
+          <h2 class="lead">
+            Friday (7/10/2015)
+          </h2>
+          <p><b>Purpose:</b> Can long can  E. coli survive in seawater, and if so for how long?</p>
+          <p><b>Idea:</b>Using +/- controls and 3.5 concentration of salt water. Focus on time and how we can kill of all GM bacteria quickly. Discussed other bacteria that we could detect in the sewage that may flow from canal to ocean. </p>
+          <p><b>Protocol for the Minimal Media Recipe </b></p>
+          <p><b>Under the Sea</b></p>
+          <ol>
+            <li>Set E. coli concentration (1:100 dilution of O/N)</li>
+            <li>Set salt concentration </li>
+            <li>Different times</li>
+          </ol>
+          <p><b>Plate</b></p>
+          <ol>
+            <li>Individual Colonies</li>
+            <li>No time restrictions</li>
+          </ol>
+          <p><b>Brooth</b></p>
+          <ol>
+            <li>Shaker mimics sea/ocean</li>
+            <li>Spectrophotometer</li>
+            <li>Time restrictions</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="week row">
+        <h3 class="header">Week 3: July 13 - July 17</h3>
+        <div class="section entry">
+          <h2 class="lead">Monday (07/13/15)</h2>
+          <p><b>Purpose:</b>Purpose of Protocol is to mimic the environment of the ocean and observe when E. coli would not grow anymore. Adjustments were made to the protocol to make the experiment more accurate; the volume of the total solution of saltwater and E. coli will be increased so there would be less evaporation of water.</p>
+          <p><b>"Under the Sea" Experiment</b></p>
+          <p><b>Materials:</b></p> 
+          <ol>
+            <li>8 Agar Plates (No antibiotics) </li>
+            <li>100 microliters of E.coli (O/N) </li>
+            <li>9900 microliters of Salt water </li>
+            <li>Positive control -0'0" salt + E.coli</li>
+            <li>Negative control - 0'0" salt</li>
+          </ol>
+          <p><b>Procedure:</b></p>
+          <ol>
+            <li>Make a 1:100 dilution of stationary phase E.coli in 9.9 ml of saltwater</li>
+            <li>Pour 9,900 microliters of saltwater into 500 ml flask </li>
+            <li>Take 1 mL, put in spectrophotometer, plate as control </li>
+            <li>Put 100 Microliters of E.coli into flask, mix, put in spec, plate as +control </li>
+            <li>Place flask on shaking platform, turn to 5 (level) </li>
+            <li>Check every hour by taking 1 ml of Solution into spec, plate 1 ml </li>
+            <li>Finish at 6 PM, last culture at 1 PM the next day</li>
+            <li>O/N plates, look at results </li>
+          </ol>
+          <img src="img/Genspace-7-13-15-0.jpeg" alt="">
+          <p>Adjustments made.</p>
+        </div>
+        <div class="section entry">
+          <h2 class="lead">
+            Tuesday (07/14/15)
+          </h2>
+          <p><b>Objective:</b> New Salinity Test</p>
+          <p><b>Purpose:</b> Reliable Results</p>
+          <p><b>Summary:</b> Yesterday’s test did not go well. When we came in this morning, we found bacteria in the negative control, and a huge margin of error in the </p>
+          <p><b>New protocol:</b> (1:10) dilution with salt water and E. coli where 4 mL of bacteria was used with 36 mL of salt water concentration. A new overnight was made with approx. 13mL. </p>
+          <p><b>Results of Salinity Test #1</b></p>
+          <img src="img/Genspace-7-13-15-1.jpeg" alt="">
+          <img src="img/Genspace-7-13-15-2.jpeg" alt="">
+          <img src="img/Genspace-7-13-15-3.jpeg" alt="">
+          <p>Lsr Team Transformations</p>
+          <p>Identified potentially useful part (S03968) and transformed into E. coli Top 10.</p>
+          
+          <ol>
+            <li>Rehydrate part using 10μL of molecular biology grade water.
+              <ul>
+                <li>Part was located in 2012 plate 3 well 8D</li>
+              </ul>
+            </li>
+            <li>Thawed competent cells on ice</li>
+            <li>Pipette 2μL of resuspended DNA onto cells.  Incubate on ice for 30 minutes.</li>
+            <li>Heat shock for 1 minute</li>
+            <li>Incubate on ice for 5 minutes</li>
+            <li>Add 200μL LB without antibiotic.  Incubate in shaker at 37°C for 30min.</li>
+            <li>Plate cells on LB agar containing ampicillin
+              <ol>
+                <li>Two plates were prepared for S03968; one using 20μL and one using 200μL of transformed cells.</li>
+                <li>200μL </li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+        <div class="section entry">
+          <h2 class="lead">Wednesday (07/15/15)</h2>
+          <p><b>Objective:</b> New Salinity Test</p>
+          <p><b>Purpose:</b> Reliable Results</p>
+          <p><b>Test:</b> Once again the negative control has grown bacteria in it, leading us to believe that our water supply is contaminated. We have plated a sample directly from an aliquot of the saltwater, and if it turns out positive then we will know why the experiment has been contaminated. We now know to autoclave all saltwater supplies in the future. </p>
+          <p>Results of Salinity Test #2 </p>
+          <img src="img/Genspace-7-15-15-0.png" alt="">
+          <img src="img/Genspace-7-15-15-1.png" alt="">
+          <img src="img/Genspace-7-15-15-2.png" alt="">
+          <img src="img/Genspace-7-15-15-3.png" alt="">
+          <p><b>Lsr Team:</b> Plates prepared on 14-Jul-2015 from E. coli Top 10 transformed with S03968 grew a significant number of colonies.  A single colony was isolated and transferred into ~5mL of LB containing ampicillin and cultures overnight at 37°C in a rotator.</p>
+          <p><b>Speakers:</b> <a href="https://www.youtube.com/watch?v=geMMjlwcPVQ">https://www.youtube.com/watch?v=geMMjlwcPVQ</a> </p>
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
+
+
+    <script src="js/d3.min.js" charset="utf-8"></script>
+    <script src="js/d3-jetpack.js"></script>
+    <script src="js/graph-scroll.js"></script>
+    <script src="js/shared.js"></script>
+    
+</body></html>
+

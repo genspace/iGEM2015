@@ -15,7 +15,13 @@
 ### Team page
 
 - [x] arrange bios correctly
+- [ ] confirm bio images
+- [ ] Add bio image emailed
 - [ ] crop bio images 
+
+### Notebook page
+
+- [ ] Migrate over google doc
 
 ### Parts page
 
@@ -34,11 +40,11 @@
 - [ ] add part NsrR
 - [ ] add part pYeaR
 - [ ] add part LsrACDB RBSs
+- [ ] scrollTo properly
 
 
 
 ## Notes
 
-NsrR
-pYeaR
-LsrACDB RBSs
+Notebook google doc published as a webpage (for images) here: https://docs.google.com/document/d/1MLNLgOdGuOWq0MM2o1ZfrbBRu0piQNkQpnecE-bnBSM/pub
+

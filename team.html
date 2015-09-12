@@ -54,7 +54,7 @@
               </ul>
             </li>       
 
-            <li><a href="./template.html">NOTEBOOK</a></li>
+            <li><a href="./notebook.html">NOTEBOOK</a></li>
             <li><a href="./template.html">ATTRIBUTIONS</a></li>
             <!-- <li class="dropdown">
               <a href="./template.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NOTEBOOK<span class="caret"></span></a>
@@ -89,6 +89,7 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+
 
     <!-- Begin page content -->
     <div class="mapBackground"></div>
@@ -149,196 +150,38 @@
       </div>
     </footer>
 
+
     <script src="js/d3.min.js" charset="utf-8"></script>
     <script src="js/d3-jetpack.js"></script>
+    <script src="js/graph-scroll.js"></script>
+    <script src="js/shared.js"></script>
+
 
     <script>
-      d3.selectAll('.dropdown')
-        .on('mouseover',function(){ this.classList.add('expand') })
-        .on('mouseout',function(){ this.classList.remove('expand') })
+      d3.json("members.json", function(error, json) {
+        var roles = ["lead", "mentor", "adult member", "student member"] //memberData.map(ƒ('key'))
+        var memberData =[]
 
-      var map = d3.select('#map')
-      var img = d3.select('#mapimg')
-      var content = d3.select('#content')
-      size()
-      function size () {
-        img.style({
-          width:window.innerWidth+'px',
+        roles.forEach(function(d,i){
+          memberData.push(d3.nest().key(function(d){return d.role}).entries(json).filter(function(m){return m.key == d})[0])
         })
-        content.style({
-          height:img.node().getBoundingClientRect().height,
+
+        var sections = d3.select('#content').selectAll('div').data(memberData).enter().append('div.section')
+
+        sections.append('h3.heading').text(ƒ('key'))
+        sections.each(function(d,i){
+          var el = d3.select(this)
+
+          var rows = el.selectAll('div').data(el.datum().values).enter().append('div.row.section')
+          var r = rows.append('div.col-md-5')  
+          r.append('img').classed('bio',true).attr('src',function(d){return 'img/'+d.img})
+          
+          var l = rows.append('div.col-md-7',true)  
+          l.append('h3').text(function(d){return d.name})
+          l.append('p').classed('lead',true).text(function(d){return d.role})
+          l.append('p').classed('description',true).text(function(d){return d.desc})        
         })
-      }
-
-      d3.select(window).on('resize.index',size)
-    </script>
-
-    <script>
-    var members = [
-      {
-        name:"David Apterman",  
-        role:"student member", 
-        img:"IGEM-logo-md.png",  
-        desc:"David Apterman is a rising sophomore at Stuyvesant High School. He has been passionate about science from a young age and thus was overjoyed when he discovered iGem. He is very interested in molecular biology and genetic engineering and the synthetic biology found in iGem was exactly what he wanted to do over the summer. He would like to pursue a career in research and would love to one day lead a pioneering study.",  
-      },
-      {
-        name:"Kyle Chen", 
-        role:"student member", 
-        img:"kyle.JPG", 
-        desc:"Kyle is an atypical who likes most things ranging from insects to Lamborghinis. He has an affinity for tech, biology, and making cool (but odd) stuff, and iGEM combines this all into one competition.", 
-      },
-      {
-        name:"Quinn Fahey", 
-        role:"student member",
-        img:"quinn.jpg",  
-        desc:"Quinn has been intrigued by genes since he read about their impact on our lives in Matt Ridley’s Genome, and he’s excited to finally tinker with genetic circuits in the lab. In school, Quinn learns about the brain in his Science Research class. Both iGem and Science Research have given him interesting insights into how biology operates. Quinn is a fan of many things, but for some reason food, Game of Thrones, and reading figure prominently while he’s writing this.",  
-      },
-      {
-        name:"Kathryn Flanagan",  
-        role:"student member",
-        img:"Kathryn.jpg",  
-        desc:"Kathryn will be going into Freshman year at Mendham High School in New Jersey. Kathryn decided to join iGEM because hearing her Dad talking about synthetic bioengineering fascinated her and she wanted to try it herself. Kathryn plays volleyball and is currently working on her Girl Scout Silver Award. She also enjoys volunteering for her local library and church.",  
-      },
-      {
-        name:"Dr. Mike Flanagan", 
-        role:"adult member",
-        img:"Mike.jpg", 
-        desc:"Mike has been a member of Genspace since 2014 and is excited to be participating in his first iGEM.  Mike has a PhD in Electrical Engineering from Caltech and has spent more than a few years working at NASA's Jet Propulsion Laboratory, Bell Labs and entrepreneurial companies (including Arieso where he was CTO).  When he is not working in Brooklyn, Mike is either at home in Chester NJ or trying to return to London.", 
-      },
-      {
-        name:"Marley Giddins",  
-        role:"student member",
-        img:"marley.JPG", 
-        desc:"Marley is a rising senior at Amherst College majoring in Biology. After college, Marley hopes to pursue a graduate degree in biomedical engineering, and is eager to learn more about the potential applications of synthetic biology. When she’s not studying or watching Netflix, Marley spends much of her time on the basketball court as a member of the Amherst College Women’s Basketball team. ", 
-      },
-      {
-        name:"Dr. Christal Gordon", 
-        role:"adult member",
-        img:"better christal.jpg",  
-        desc:"Dr. Christal Gordon is an engineer and educator.  She received a dual Electrical and Computer Engineering B.S. from Polytechnic University and her M.S. and Ph.D. in Electrical Engineering (minor in Neuroscience) from the Georgia Institute of Technology.  Her specialties include designing, prototyping, and programming. She has designed bio-inspired and bio-interfacing systems, high-speed electronics, and models of complex systems.  Her work revolves around creating systems for use by the general public, engineers, and neuroscientists.  Applications of these systems include low-power consumer electronics and neural prosthetics.  She's passionate about bringing science to the general public.", 
-      },
-      {
-        name:"Miranda Halle", 
-        role:"student member",
-        img:"miranda.JPG",  
-        desc:"Miranda is a rising sophomore attending the University of Chicago who exists. She does molecular biology things at school, and has been doing similar things at Genspace since 2013. She’s a big Star Trek nerd. Yay science.", 
-      },
-      {
-        name:"Jan Kowalski",  
-        role:"student member",
-        img:"jan.JPG",  
-        desc:"Jan is a 15 year kid with big aspirations and little confusion on how to get there. He hopes to become a geneticist, and but has many backup jobs in mind, ranging from  a saxophone player to professional LEGO builder. He is currently a sophomore at Stuyvesant High School.",  
-      },
-      {
-        name:"Jason Mohabir", 
-        role:"student member",
-        img:"jason.jpg",  
-        desc:"Jason is a rising junior at Stuyvesant High School. He enjoys learning about molecular techniques, and has gained a recent interest in bioinformatics. Jason spends most of his weekends volunteering, and simply out of the house. He is stuck between a hard place and rock when it comes down to career choice, as he is intrigued by medicine, but enjoys the bench work of research. When he has spare time, Jason enjoys reading existential literature and questioning his purpose in life.",  
-      },
-      {
-        name:"Jennifer Phu",  
-        role:"student member",
-        img:"JenniferPhu.JPG",  
-        desc:"Jennifer Phu is a rising junior at Midwood High School in the science research program. She is interested in math and science and plans to pursue a career in medicine. She plays the guitar during her free time and enjoys volunteering at the library. ",  
-      },
-      {
-        name:"Raul Rodriguez",  
-        role:"student member",
-        img:"Raul.jpg", 
-        desc:"",  
-      },
-      {
-        name:"Will Shindel",  
-        role:"adult member",
-        img:"will.JPG", 
-        desc:"Will is a Genspace member with a degree in Biology.  Having spent a few years in pharmaceuticals, Will now spends his time volunteering at Genspace.  When not practicing synthetic biology, Will has a tendency to build hydroponic systems and brew beer.", 
-      },
-      {
-        name:"Danny Swift", 
-        role:"student member",
-        img:"IGEM-logo-md.png",  
-        desc:"Danny is a rising senior at Pomona College, studying molecular biology, applied mathematics, and economics. Never one to say no to the opportunity to take something apart and put it back together, the iGEM competition was a natural draw for Danny. After graduating, he hopes to combine his interests in biology and finance within the emerging biotechnology sector.",  
-      },
-      {
-        name:"Sid Vadaparty", 
-        role:"student member",
-        img:"IGEM-logo-md.png",  
-        desc:"Sid is a rising freshman at Montgomery High School. An engineer of all sorts at heart, he dabbles in robotics and electronics at home. Just for fun. iGem gives him a chance to gain a whole new level of experience. He is determined to contribute to Genspace’s iGem team to help accomplish their goal.", 
-      },
-      {
-        name:"Dr. Julie Wolf",  
-        role:"mentor",
-        img:"IGEM-logo-md.png",  
-        desc:"Julie has been involved with Genspace since 2012. Her doctorate and postdoctorate work is in medical mycology, but she is a fan of microbiology and molecular biology of all sorts. She enjoys coffee, podcasts, data, citizen science, and infographics.", 
-      },
-      {
-        name:"Whitney Wong",  
-        role:"student member",
-        img:"whitney.JPG",  
-        desc:"Whitney is a rising junior at Midwood High School. She first developed her interest in biology during her freshman year of high school. After participating and competing in the Urban Barcode Project, she was introduced to iGem through Genspace. When she isn’t in lab or studying, she is playing piano or watching Sherlock.",  
-      },
-      {
-        name:"Jennifer Yu ",  
-        role:"student member",
-        img:"jennifer_yu.jpg",  
-        desc:"Jennifer Yu is a rising sophomore at Stuyvesant High School. Science and math are her favorite subjects. She is most interested in genetic engineering, and wants to pursue a career in this field when she becomes older. iGem presented itself as a fantastic opportunity to start exploring genomes and to try to mold DNA into a piece of biological machinery. In her spare time away from the lab, she enjoys reading, eating, playing tennis and trying not to fall off her skateboard. ", 
-      },
-      {
-        name:"Angel Zou", 
-        role:"student member",
-        img:"angel.JPG",  
-        desc:"Angel is a rising junior at Midwood High School. She was first introduced to Genspace through this Urban Barcode Competition and later on heard about the iGem competition. She enjoys working in lab and meeting new people. Through working in labs, she learned lab techniques and how to work with each other. To Angel, Genspace is like a second home but instead she’s living under the same roof with colonies of bacteria.", 
-      },
-      {
-        name:"Daniel Hack", 
-        role:"student member",
-        img:"IGEM-logo-md.png",  
-        desc:"Daniel Hack is a rising junior at Suffern Senior High School. At his school, Daniel took a science research course that led to his involvement in Genspace. While doing research on synthetic biology, he heard of the IGEM competition and was emphatic to hear that Genspace had a team. Daniel is very passionate about biology and is looking forward to the giant IGEM Jamboree.", 
-      },
-      {
-        name:"Jane Kaitlin Young",  
-        role:"student member",
-        img:"IGEM-logo-md.png",  
-        desc:"Kaitlin Young is a rising sophomore at The Dalton School in Manhattan. She is very excited to be on Genspace's iGEM team this year. She really enjoys learning about synthetic biology and meeting new people with similar interests. While not in the lab, she enjoys swimming, writing short stories and learning all things related to technology.  ", 
-      },
-      {
-        name:"Dr. Ellen Jorgensen", 
-        role:"lead",
-        img:"ellen.jpg",  
-        desc:"Dr. Ellen Jorgensen is co-founder and Director of Genspace, and holds adjunct positions at New York Medical College, Cooper Union, and the School of Visual Arts. She is passionate about increasing science literacy in both student member and adult member populations, particularly in the areas of molecular and synthetic biology. Her efforts to develop Genspace into a haven for entrepreneurship, innovation and citizen science have been chronicled by Nature Medicine, Science, Discover Magazine, BBC News, Dan Rather Reports, PBS News Hour, the New York Times and her 2012 TEDGlobal talk (Biohacking- you can do it, too). This is the fifth iGEM team she has led, and that just goes to show that memories of fun somehow always overcome memories of pain.",  
-      },
-      {
-        name:"Allison Birnbaum",  
-        role:"mentor",
-        img:"allison.jpg",  
-        desc:"Allison Birnbaum is a Ph.D. candidate at Iowa State. After obtaining her Masters degree, she was a  research assistant at the Feinstein Institute for Medical Research. She has been volunteering at Genspace for several years and was part of our gold medal-winning 2014 iGEM team. Her background is in genetics and molecular biology, and though being outside in the sunshine is nice, she is a self-described lab rat. When she completes her doctorate she hopes to work in the fields of  gene therapy and genetic engineering",  
-      },
-    ]
-    </script>
-    <script>
-      var roles = ["lead", "mentor", "adult member", "student member"] //memberData.map(ƒ('key'))
-      var memberData =[]
-
-      roles.forEach(function(d,i){
-        memberData.push(d3.nest().key(function(d){return d.role}).entries(members).filter(function(m){return m.key == d})[0])
       })
-
-      var sections = d3.select('#content').selectAll('div').data(memberData).enter().append('div.section')
-
-      sections.append('h3.heading').text(ƒ('key'))
-      sections.each(function(d,i){
-        var el = d3.select(this)
-
-        var rows = el.selectAll('div').data(el.datum().values).enter().append('div.row.section')
-        var r = rows.append('div.col-md-5')  
-        r.append('img').classed('bio',true).attr('src',function(d){return 'img/'+d.img})
-        
-        var l = rows.append('div.col-md-7',true)  
-        l.append('h3').text(function(d){return d.name})
-        l.append('p').classed('lead',true).text(function(d){return d.role})
-        l.append('p').classed('description',true).text(function(d){return d.desc})        
-      })
-
 
     </script>
 </body></html>

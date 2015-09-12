@@ -15,7 +15,6 @@
   </head>
 
   <body class="">
-
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -54,7 +53,7 @@
               </ul>
             </li>       
 
-            <li><a href="./template.html">NOTEBOOK</a></li>
+            <li><a href="./notebook.html">NOTEBOOK</a></li>
             <li><a href="./template.html">ATTRIBUTIONS</a></li>
             <!-- <li class="dropdown">
               <a href="./template.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NOTEBOOK<span class="caret"></span></a>
@@ -89,6 +88,7 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+
     <!-- Begin page content -->
     <div class="mapBackground"></div>
     <img id="mapimg" src="img/gowanus_canal.jpg" alt="">
@@ -143,22 +143,22 @@
         <div class="row header ">
           <div class="col-md-12">
             <h1>11 Parts Contributed to the Registry</h1>
-            <p class="">
-              <a href="#pLsrA">pLsrA</a>  | 
-              <a href="#LsrK">LsrK</a> | 
-              <a href="#LsrR">LsrR</a> | 
-              <a href="#LsrA-wt">LsrA (wild type)</a> | 
-              <a href="#LsrC-wt">LsrC (wild type)</a> | 
-              <a href="#LsrD-wt">LsrD (wild type)</a> | 
-              <a href="#LsrB-wt">LsrB (wild type)</a> | 
-              <a href="#LsrA-mo">LsrA (modular)</a> | 
-              <a href="#LsrC-mo">LsrC (modular)</a> | 
-              <a href="#LsrD-mo">LsrD (modular)</a> | 
-              <a href="#LsrB-mo">LsrB (modular)</a>
+            <p class="partsNav">
+              <a class="partNav" data-part="#pLsrA">pLsrA</a>  | 
+              <a class="partNav" data-part="#LsrK">LsrK</a> | 
+              <a class="partNav" data-part="#LsrR">LsrR</a> | 
+              <a class="partNav" data-part="#LsrA-wt">LsrA (wild type)</a> | 
+              <a class="partNav" data-part="#LsrC-wt">LsrC (wild type)</a> | 
+              <a class="partNav" data-part="#LsrD-wt">LsrD (wild type)</a> | 
+              <a class="partNav" data-part="#LsrB-wt">LsrB (wild type)</a> | 
+              <a class="partNav" data-part="#LsrA-mo">LsrA (modular)</a> | 
+              <a class="partNav" data-part="#LsrC-mo">LsrC (modular)</a> | 
+              <a class="partNav" data-part="#LsrD-mo">LsrD (modular)</a> | 
+              <a class="partNav" data-part="#LsrB-mo">LsrB (modular)</a>
             </p>
           </div>
         </div>
-        <div id="pLsrA" class="row">
+        <div id="pLsrA" class="row part">
           <div class="section col-md-7 col-lg-6">
             <svg class="construct-map" height="725" style="height:725px;left:-225px;position:relative;top:-275px;width:775px;perspective-origin:387.5px 362.5px;transform-origin:387.5px 362.5px;" version="1.1" width="775" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <style style="height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:50% 50%;transform-origin:0px 0px;" type="text/css">a:visited{
@@ -325,7 +325,7 @@
             <p class="lead">Promoter for the E. coli LsrACDB operon. This promoter is repressed by LsrR, and derepressed by autoinducer 2 (AI-2) in the presence of LsrK.</p>
           </div>
         </div>
-        <div id="LsrK" class="row">
+        <div id="LsrK" class="row part">
           <div class="section col-md-7 col-lg-6">
             <svg class="construct-map" height="725" style="height:725px;left:-225px;position:relative;top:-269.5px;width:775px;perspective-origin:387.5px 362.5px;transform-origin:387.5px 362.5px;" version="1.1" width="775" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <style style="height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:50% 50%;transform-origin:0px 0px;" type="text/css">a:visited{
@@ -511,7 +511,7 @@
             <p class="lead">Gene for the kinase LsrK, present in E. coli on the LsrRK operon. Phosphorylates autoinducer 2 (AI-2), and is thought to have other regulatory functions in the cell as well.</p>
           </div>
         </div>
-        <div id="LsrR" class="row">
+        <div id="LsrR" class="row part">
           <div class="section col-md-7 col-lg-6">
             <svg class="construct-map" height="725" style="height:725px;left:-225px;position:relative;top:-272.5px;width:775px;perspective-origin:387.5px 362.5px;transform-origin:387.5px 362.5px;" version="1.1" width="775" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <style style="height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:50% 50%;transform-origin:0px 0px;" type="text/css">a:visited{
@@ -692,7 +692,7 @@
           </div>
         </div>
 
-        <div id="LsrA-wt" class="row">
+        <div id="LsrA-wt" class="row part">
           <div class="section col-md-7 col-lg-6">
             <svg class="construct-map" height="725" style="height:725px;left:-225px;position:relative;top:-269.5px;width:775px;perspective-origin:387.5px 362.5px;transform-origin:387.5px 362.5px;" version="1.1" width="775" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <style style="height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:50% 50%;transform-origin:0px 0px;" type="text/css">a:visited{
@@ -879,7 +879,7 @@
           </div>
         </div>
 
-        <div id="LsrC-wt" class="row">
+        <div id="LsrC-wt" class="row part">
           <div class="section col-md-7 col-lg-6">
             <svg class="construct-map" height="725" style="height:725px;left:-225px;position:relative;top:-271.5px;width:775px;perspective-origin:387.5px 362.5px;transform-origin:387.5px 362.5px;" version="1.1" width="775" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <style style="height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:50% 50%;transform-origin:0px 0px;" type="text/css">a:visited{
@@ -1060,7 +1060,7 @@
           </div>
         </div>
 
-        <div id="LsrD-wt" class="row">
+        <div id="LsrD-wt" class="row part">
           <div class="section col-md-7 col-lg-6">
             <svg class="construct-map" height="725" style="height:725px;left:-225px;position:relative;top:-271.5px;width:775px;perspective-origin:387.5px 362.5px;transform-origin:387.5px 362.5px;" version="1.1" width="775" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <style style="height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:50% 50%;transform-origin:0px 0px;" type="text/css">a:visited{
@@ -1241,7 +1241,7 @@
           </div>
         </div>
         
-        <div id="LsrB-wt" class="row">
+        <div id="LsrB-wt" class="row part">
           <div class="section col-md-7 col-lg-6">
             <svg class="construct-map" height="725" style="height:725px;left:-225px;position:relative;top:-271.5px;width:775px;perspective-origin:387.5px 362.5px;transform-origin:387.5px 362.5px;" version="1.1" width="775" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <style style="height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:50% 50%;transform-origin:0px 0px;" type="text/css">a:visited{
@@ -1422,7 +1422,7 @@
           </div>
         </div>
         
-        <div id="LsrA-mo" class="row">
+        <div id="LsrA-mo" class="row part">
           <div class="section col-md-7 col-lg-6">
             <svg class="construct-map" height="725" style="height:725px;left:-225px;position:relative;top:-269.5px;width:775px;perspective-origin:387.5px 362.5px;transform-origin:387.5px 362.5px;" version="1.1" width="775" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <style style="height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:50% 50%;transform-origin:0px 0px;" type="text/css">a:visited{
@@ -1609,7 +1609,7 @@
 The portion of the LsrACDBFG operon that codes for the AI-2 transporter consists of four open reading frames, which code for A, C, D, and B, respectively. Three of these ORFs overlap with one another: C overlaps with A, and its RBS is contained within the A subunit ORF, and D overlaps with C (although to a lesser extent), and its RBS is contained within the C subunit ORF. From a modularization standpoint, this creates an inefficiency because the wild type ORFs of the A and C subunits both contain functional RBSs, and in the case of the A subunit ORF, an ATG 4bp downstream. To reduce this inefficiency, we have created versions of each subunit ORF that are optimized for modularization.</p>
           </div>
         </div>
-        <div id="LsrC-mo" class="row">
+        <div id="LsrC-mo" class="row part">
           <div class="section col-md-7 col-lg-6">
             <svg class="construct-map" height="725" style="height:725px;left:-225px;position:relative;top:-271.5px;width:775px;perspective-origin:387.5px 362.5px;transform-origin:387.5px 362.5px;" version="1.1" width="775" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <style style="height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:50% 50%;transform-origin:0px 0px;" type="text/css">a:visited{
@@ -1791,7 +1791,7 @@ The portion of the LsrACDBFG operon that codes for the AI-2 transporter consists
           </div>
         </div>
 
-        <div id="LsrC-mo" class="row">
+        <div id="LsrC-mo" class="row part">
           <div class="section col-md-7 col-lg-6">
             <svg class="construct-map" height="725" style="height:725px;left:-225px;position:relative;top:-271.5px;width:775px;perspective-origin:387.5px 362.5px;transform-origin:387.5px 362.5px;" version="1.1" width="775" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <style style="height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:50% 50%;transform-origin:0px 0px;" type="text/css">a:visited{
@@ -1973,7 +1973,7 @@ The portion of the LsrACDBFG operon that codes for the AI-2 transporter consists
           </div>
         </div>
 
-        <div id="LsrB-mo" class="row">
+        <div id="LsrB-mo" class="row part">
           <div class="section col-md-7 col-lg-6">
             <svg class="construct-map" height="725" style="height:725px;left:-225px;position:relative;top:-271.5px;width:775px;perspective-origin:387.5px 362.5px;transform-origin:387.5px 362.5px;" version="1.1" width="775" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <style style="height:auto;overflow-x:visible;overflow-y:visible;width:auto;perspective-origin:50% 50%;transform-origin:0px 0px;" type="text/css">a:visited{
@@ -2155,7 +2155,7 @@ The portion of the LsrACDBFG operon that codes for the AI-2 transporter consists
           </div>
         </div>
 
-        <!-- <div id="" class="row">
+        <!-- <div id="" class="row part">
           <div class="section col-md-5">
               
           </div>
@@ -2176,26 +2176,18 @@ The portion of the LsrACDBFG operon that codes for the AI-2 transporter consists
 
     <script src="js/d3.min.js" charset="utf-8"></script>
     <script src="js/d3-jetpack.js"></script>
+    <script src="js/graph-scroll.js"></script>
+    <script src="js/shared.js"></script>
     
     <script>
-      d3.selectAll('.dropdown')
-        .on('mouseover',function(){ this.classList.add('expand') })
-        .on('mouseout',function(){ this.classList.remove('expand') })
+      var partSections = d3.selectAll('.row.part')
+      var gs =graphScroll()
+        .graph(d3.selectAll('.header'))
+        .container(d3.select('.parts'))
+        .sections(partSections)
 
-      var map = d3.select('#map')
-      var img = d3.select('#mapimg')
-      var content = d3.select('#content')
-      size()
-      function size () {
-        img.style({
-          width:window.innerWidth+'px',
-        })
-        content.style({
-          height:img.node().getBoundingClientRect().height,
-        })
-      }
-
-      d3.select(window).on('resize.index',size)
+      d3.selectAll('.partNav')
+        .on('click',function(d,i){gs.scrollTo(i)})
     </script>
 </body>
 </html>
