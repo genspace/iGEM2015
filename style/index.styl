@@ -135,7 +135,14 @@ code
   #map
     display block
     position absolute
-    
+iframe
+  width 100%
+  height 700px
+  +below(1200px)
+    height 640px
+  +below(990px)
+    height 480px
+        
 svg
   .outline, .sites
     opacity 0
@@ -202,7 +209,6 @@ img
   +below(1200px)
     transform scale(1.2) translate(-70px, 20px)
 
-
 .week
   margin 0px 0 20px
   padding 0px 0 60px
@@ -216,4 +222,24 @@ img
     img
       width 100%
       margin 20px 0
+      
+.attributions
+  .member
+    width 100%
+    margin 10px 0
+    display inline-block
+  p
+    margin 0
+    line-height 18px
+    width auto
+  .name
+    float left
+    width 20%
+    +below(767px)
+      width 30%
+  .attribution
+    width 65%
+    text-transform capitalize
+    float left
+  
 /*# sourceMappingURL=index.css.map */
