@@ -121,6 +121,8 @@
       <circle id="gcss-14" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="512.65" cy="5195.565" r="10.516"/>
     </g>
     </svg>
+    <div class="banner">
+    </div>
     <div class="teamBackground"></div>
     <div id="content" class="container team">
         <h1>Member Bio's</h1>
@@ -140,6 +142,7 @@
 
 
     <script>
+      d3.select('.teamBackground').style('height', .65*window.innerHeight+'px')
       d3.json("members.json", function(error, json) {
         var roles = ["lead mentor", "mentor", "adult member", "student member"] //memberData.map(ƒ('key'))
         var memberData =[]
