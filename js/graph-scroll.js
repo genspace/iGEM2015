@@ -1,6 +1,6 @@
 function graphScroll() {
   var windowHeight,
-      dispatch = d3.dispatch("scroll", "active"),
+      dispatch = d3.dispatch("scroll", "active", "fixed", "above", "below"),
       sections = d3.select('null'),
       i = -1,
       sectionPos = [],
@@ -8,10 +8,11 @@ function graphScroll() {
       graph = d3.select('null'),
       isFixed = null,
       isBelow = null,
+      isAbove = null,
       container = d3.select('body'),
       containerStart = 0,
       belowStart,
-      eventId = Math.random(), 
+      eventId = Math.random(),
       stickyTop
 
   function reposition(){
@@ -28,17 +29,23 @@ function graphScroll() {
       i = i1
     }
 
-    var isBelow1 = pageYOffset > belowStart - 120
+    var isAbove1 = pageYOffset < containerStart
+    if (isAbove != isAbove1){
+      isAbove = isAbove1
+      graph.classed('graph-scroll-above', isAbove)
+      if(isAbove) dispatch.above(i1)
+    }
+    var isBelow1 = pageYOffset > belowStart
     if (isBelow != isBelow1){
       isBelow = isBelow1
       graph.classed('graph-scroll-below', isBelow)
+      if(isBelow) dispatch.below(i1)
     }
-
-    var isFixed1 = !isBelow && pageYOffset > containerStart - 120
+    var isFixed1 = !isBelow && pageYOffset > containerStart+stickyTop
     if (isFixed != isFixed1){
       isFixed = isFixed1
-      graph
-        .classed('graph-scroll-fixed', isFixed)
+      graph.classed('graph-scroll-fixed', isFixed)
+      if(isFixed) dispatch.fixed(i1)
     }
 
     if (stickyTop){
@@ -46,7 +53,7 @@ function graphScroll() {
     }
   }
 
-  function resize(){
+   function resize(){
     sectionPos = []
     var startPos
     sections.each(function(d, i){
@@ -97,7 +104,7 @@ function graphScroll() {
       .transition()
         .duration(500)
         .tween("scroll", function() {
-          var i = d3.interpolateNumber(pageYOffset, sectionPos[_x] + containerStart)
+          var i = d3.interpolateNumber(pageYOffset, sectionPos[_x] + containerStart+(stickyTop?-stickyTop:0))
           return function(t) { scrollTo(0, i(t)) }
         })
     return rv
