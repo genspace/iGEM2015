@@ -136,20 +136,28 @@
       d3.select('.teamBackground').style('height', .65*window.innerHeight+'px')
       d3.select('#content').style('margin-top', .65*window.innerHeight+'px')
       d3.json("members.json", function(error, json) {
-        var roles = ["lead mentor", "mentor", "adult member", "student member"] //memberData.map(ƒ('key'))
+        var roles = ["member","mentor"] //memberData.map(ƒ('key'))
         var memberData =[]
 
         roles.forEach(function(d,i){
-          memberData.push(d3.nest().key(function(d){return d.role}).entries(json).filter(function(m){return m.key == d})[0])
+          var r = d3.nest().key(function(m){return m.role }).entries(json).filter(function(m){return m.key.indexOf(d)>-1})
+          var values = []
+          r.map(ƒ('values')).forEach(function(m){
+            m.forEach(function(v){
+              values.push(v)  
+            })
+          })
+        
+          memberData.push({key:d,values:values.reverse()})
         })
-
-        var sections = d3.select('#content').selectAll('div').data(memberData).enter().append('div.section')
+        
+        var sections = d3.select('#content').selectAll('div').data(memberData).enter().append('div.section.member')
 
         sections.append('h3.heading').text(ƒ('key'))
         sections.each(function(d,i){
           var el = d3.select(this)
 
-          var rows = el.selectAll('div').data(el.datum().values).enter().append('div.row.section')
+          var rows = el.selectAll('div').data(el.datum().values.sort(d3.ascendingKey('name'))).enter().append('div.row.section')
           var r = rows.append('div.col-md-5')  
           r.append('img').classed('bio',true).attr('src',function(d){return 'img/'+d.img})
           

@@ -25,7 +25,7 @@
   },
   {
     "name":"Dr. Mike Flanagan",
-    "role":"adult member",
+    "role":"genspace member",
     "img":"Mike.jpg",
     "desc":"Mike has been a member of Genspace since 2014 and is excited to be participating in his first iGEM.  Mike has a PhD in Electrical Engineering from Caltech and has spent more than a few years working at NASA's Jet Propulsion Laboratory, Bell Labs and entrepreneurial companies (including Arieso where he was CTO).  When he is not working in Brooklyn, Mike is either at home in Chester NJ or trying to return to London."
   },
@@ -37,7 +37,7 @@
   },
   {
     "name":"Dr. Christal Gordon",
-    "role":"adult member",
+    "role":"genspace member",
     "img":"christal.jpg",
     "desc":"Dr. Christal Gordon is an engineer and educator.  She received a dual Electrical and Computer Engineering B.S. from Polytechnic University and her M.S. and Ph.D. in Electrical Engineering (minor in Neuroscience) from the Georgia Institute of Technology.  Her specialties include designing, prototyping, and programming. She has designed bio-inspired and bio-interfacing systems, high-speed electronics, and models of complex systems.  Her work revolves around creating systems for use by the general public, engineers, and neuroscientists.  Applications of these systems include low-power consumer electronics and neural prosthetics.  She's passionate about bringing science to the general public."
   },
@@ -73,13 +73,13 @@
   },
   {
     "name":"Blacki Migliozzi",
-    "role":"adult member",
+    "role":"genspace member",
     "img":"blacki.jpeg",
     "desc":"Blacki Migliozzi is a data visualization developer for Bloomberg Graphics. He has studied Human-Computer Interaction, Discrete math and nano-materials. He has previously spent time designing and prototyping small-scale agricultural technologies. As a member of Genspace he is currently interested in the intersection of biotech and agrarian practices."
   },
   {
     "name":"Will Shindel",
-    "role":"adult member",
+    "role":"genspace member",
     "img":"will.JPG",
     "desc":"Will is a Genspace member with a degree in Biology.  Having spent a few years in pharmaceuticals, Will now spends his time volunteering at Genspace.  When not practicing synthetic biology, Will has a tendency to build hydroponic systems and brew beer."
   },
@@ -135,7 +135,7 @@
     "name":"Dr. Ellen Jorgensen",
     "role":"lead mentor",
     "img":"ellen.jpg",
-    "desc":"Dr. Ellen Jorgensen is co-founder and Director of Genspace, and holds adjunct positions at New York Medical College, Cooper Union, and the School of Visual Arts. She is passionate about increasing science literacy in both student member and adult member populations, particularly in the areas of molecular and synthetic biology. Her efforts to develop Genspace into a haven for entrepreneurship, innovation and citizen science have been chronicled by Nature Medicine, Science, Discover Magazine, BBC News, Dan Rather Reports, PBS News Hour, the New York Times and her 2012 TEDGlobal talk (Biohacking- you can do it, too). This is the fifth iGEM team she has led, and that just goes to show that memories of fun somehow always overcome memories of pain."
+    "desc":"Dr. Ellen Jorgensen is co-founder and Director of Genspace, and holds adjunct positions at New York Medical College, Cooper Union, and the School of Visual Arts. She is passionate about increasing science literacy in both student member and genspace member populations, particularly in the areas of molecular and synthetic biology. Her efforts to develop Genspace into a haven for entrepreneurship, innovation and citizen science have been chronicled by Nature Medicine, Science, Discover Magazine, BBC News, Dan Rather Reports, PBS News Hour, the New York Times and her 2012 TEDGlobal talk (Biohacking- you can do it, too). This is the fifth iGEM team she has led, and that just goes to show that memories of fun somehow always overcome memories of pain."
   },
   {
     "name":"Allison Birnbaum",

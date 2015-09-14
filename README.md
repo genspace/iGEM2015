@@ -34,11 +34,11 @@
 
 ### Parts page
 
+- [x] scrollTo properly
 - [ ] add part NsrR
 - [ ] add part pYeaR
 - [ ] add part LsrACDB RBSs
-- [ ] scrollTo properly
-
+- [ ] make page like http://2011.igem.org/Team:Columbia-Cooper/Project
 
 
 ## Notes
@@ -48,8 +48,6 @@ Notebook google doc published as a webpage (for images) here: https://docs.googl
 
 
 Introduction page
-	? where should this live onits own page sub nav'd under homepage?
-
 	repeat the abstract, maybe with a little more words- ask Jen, also a doc has been started- Ellen to edit
 	video that explains why the canal is interesting and Genspace’s past work on its microbiome- Ellen
 	explain decision to do the two parts of the project (biosensor and mining the canal for extremophile pathways)
@@ -88,6 +86,7 @@ Safety - Ellen
 
 Community engagement - Mike and Ellen
 	helping another iGEM team (may want to break out in to separate page? Not sure yet)
+	
 	NY Hall of Science
 	Gowanus Conservancy meeting
 	Ian and Matt meeting

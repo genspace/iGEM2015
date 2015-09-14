@@ -18,6 +18,12 @@ body
   height 60px
   background-color #f5f5f5
 
+.container
+  +below(992px)
+    width 95%
+  +below(767px)
+    width 95%
+
 .container>.navbar-header
   width 100%
   min-height 80px
@@ -38,7 +44,7 @@ body
   
 .nav.navbar-nav
   +below(992px)
-    width 80%
+    width 90%
     
 .nav>li>a
     position relative
@@ -59,7 +65,7 @@ body
     &.genspace
       width 260px
       max-width 50%
-      margin 10px 0 0px 10px
+      margin 10px 0 10px 10px
       +below(767px)
         margin 10px
 
@@ -123,6 +129,7 @@ code
   position fixed
   width 100%
   height 100%
+  top 0
 
 #content
   z-index 1
@@ -225,6 +232,13 @@ img
       +below(992px)
         margin 20px auto
         display block
+.team
+  &.container
+    padding-top 0px
+  .member
+    .lead
+      text-transform capitalize
+
 .parts
   .row
     background-color rgba(255,255,255,0.8)
