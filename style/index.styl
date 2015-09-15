@@ -84,6 +84,7 @@ h2
   &.lead
     font-size 22px
 h4
+  margin 20px 0 
   .lead
     font-size 16px
     +below(1200px)
@@ -104,6 +105,9 @@ body
 body > .container
   padding 160px 15px 0
   /*background-color rgba(255,255,255,.7)*/
+
+.underline
+  text-decoration underline
 
 .container .text-muted
   margin 20px 0
@@ -267,6 +271,10 @@ img
   margin 0px 0 20px
   padding 0px 0 60px
   border-bottom 2px solid #c7c7c7
+  table
+    margin 30px auto
+    width 90%
+    
   .header
     margin 20px 
   .section
@@ -275,7 +283,14 @@ img
     margin 0px
     img
       width 100%
-      margin 20px 0
+      margin 20px auto
+      display block
+      &.small
+        max-width 500px
+      &.col2
+        margin 20px 1%
+        max-width 46%
+        float left
       
 .attributions
   .member
