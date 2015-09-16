@@ -145,7 +145,7 @@ code
   a
     color $green
     background-color #fff
-    padding 0 5px
+    
   a:hover
     color $gHover
 
@@ -306,7 +306,33 @@ img
         margin 20px 1%
         max-width 46%
         float left
-      
+.fancybox
+  padding 0
+          
+.human
+  .section
+    background-color rgba(255,255,255,0.8)
+    padding 20px
+    margin 0px
+    img
+      width 100%
+      margin 20px auto
+      display block
+      &.small
+        max-width 500px
+      &.col2
+        margin 20px 1%
+        max-width 46%
+        float left
+      &.col3
+        margin 20px .5%
+        max-width 32%
+        float left
+        &:first-cild
+          margin-left 1%
+        &:last-cild
+          margin-right 1%
+          
 .attributions
   .member
     width 100%

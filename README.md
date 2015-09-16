@@ -45,7 +45,11 @@
 
 Notebook google doc published as a webpage (for images) here: https://docs.google.com/document/d/1MLNLgOdGuOWq0MM2o1ZfrbBRu0piQNkQpnecE-bnBSM/pub
 
+Standard pages http://2015.igem.org/Wiki_How-To/Standard_Pages
 
+Special page http://2015.igem.org/Team:Example/Practices
+
+## Outline
 
 Introduction page
 	repeat the abstract, maybe with a little more words- ask Jen, also a doc has been started- Ellen to edit
@@ -64,18 +68,12 @@ Team page
 	Sponsors list and logos ellen to provide
 
 
-
-
 Project Details page Mike and Will and Julie to effort- Ellen to do 1st draft. Note that there will be a landing page that gives a quick summary but links out to the 2 different parts of the project, perhaps with a photo. One part is the Biosensor and the other part is Microbiome Mining
-
-
-Notebook Page 
-	daily logs w/ pictures
-	upload from Google doc
 
 Attributions
 	list who did what, briefly - Ellen to aks team in email
 	credit collaborators like Ali and Alex - ellen
+
 Parts page
 	table of parts - linkouts to registry pages JUlie is working on this
 
