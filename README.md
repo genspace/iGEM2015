@@ -49,44 +49,31 @@ Standard pages http://2015.igem.org/Wiki_How-To/Standard_Pages
 
 Special page http://2015.igem.org/Team:Example/Practices
 
-## Outline
 
-Introduction page
-	repeat the abstract, maybe with a little more words- ask Jen, also a doc has been started- Ellen to edit
-	video that explains why the canal is interesting and Genspace’s past work on its microbiome- Ellen
-	explain decision to do the two parts of the project (biosensor and mining the canal for extremophile pathways)
+### Judging
 
-Team page
-	Gif banner
-	
-	Brief description of a community lab- ellen to write
+One of the ways that they give us medals is by directly linking pages from our WIKI to a Judging Form. If this process is interrupted them we will not win a medal. Here is the link so you can see whats going on.
 
-	“students” (includes adults without a PhD in biosciences) pics and bios
-	instructors (Julie, Ellen, Alison) pics and bios
-	
-	collaborators list w/affiliations (Ian, Matt, Alex M., Ali) Ellen to provide
-	Sponsors list and logos ellen to provide
+http://igem.org/2015_Judging_Form?id=1799
+
+If you can please put content on these wiki pages before the others I would appreciate it. If you have any questions call me. 
+
+I would load Atributions, collaborations, human practices, notebook and part table	
 
 
-Project Details page Mike and Will and Julie to effort- Ellen to do 1st draft. Note that there will be a landing page that gives a quick summary but links out to the 2 different parts of the project, perhaps with a photo. One part is the Biosensor and the other part is Microbiome Mining
+### Files 
+http://2015.igem.org/File:EnqueteGowanus_med.mp4 
+http://2015.igem.org/File:EnqueteGowanus_poster.png
 
-Attributions
-	list who did what, briefly - Ellen to aks team in email
-	credit collaborators like Ali and Alex - ellen
+http://2015.igem.org/File:GowanusCanal_med.mp4
+http://2015.igem.org/File:GowanusCanal_poster.png
 
-Parts page
-	table of parts - linkouts to registry pages JUlie is working on this
+http://2015.igem.org/File:Genspace_nyhos_0.JPG
+http://2015.igem.org/File:Genspace_nyhos_2.jpg
+http://2015.igem.org/File:Genspace_nyhos_3.jpg
 
-Safety - Ellen
-	unique issues around the biosensor
-	unique issues around the mining project
-	do NOT repeat data in safety form
+http://2015.igem.org/File:Genspace_gcc_1.jpg
+http://2015.igem.org/File:Genspace_gcc_2.jpg
+http://2015.igem.org/File:Genspace_gcc_3.jpg
 
-Community engagement - Mike and Ellen
-	helping another iGEM team (may want to break out in to separate page? Not sure yet)
-	
-	NY Hall of Science
-	Gowanus Conservancy meeting
-	Ian and Matt meeting
-	Meeting with FBI
-
+http://2015.igem.org/File:Genspace_fbi.JPG

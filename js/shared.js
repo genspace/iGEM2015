@@ -16,3 +16,9 @@ function size () {
 }
 
 d3.select(window).on('resize.index',size)
+
+d3.selectAll('video')
+	.on('click',function(){
+		console.log(this)
+	    this.play()
+	})
