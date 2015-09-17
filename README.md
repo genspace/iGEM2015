@@ -4,9 +4,8 @@
 
 ### Header
 
-- [ ] collapse nav at different screen sizes
-- [ ] logo placement different screensizes 
-- [ ] headroom header 
+- [ ] Update links for actual wiki 
+- [ ] place on actual wiki 
 
 ### Home page
 
@@ -18,19 +17,11 @@
 
 ### Team page
 
-- [ ] Add slider with imagery 
-- [x] arrange bios correctly
-- [x] Add bio image emailed
-- [ ] confirm bio images
-- [ ] crop bio images 
-- [ ] merge mentors and merge students
+- [ ] add copy "The Genspace team is made up of community members" from human practices
 
-### Notebook page
+### Project Page
 
-- [ ] on click week scrollto
-- [ ] Migrate over July
-- [ ] Migrate over Aug
-- [ ] Migrate over Sept
+- [ ] 
 
 ### Parts page
 
@@ -39,6 +30,38 @@
 - [ ] add part pYeaR
 - [ ] add part LsrACDB RBSs
 - [ ] make page like http://2011.igem.org/Team:Columbia-Cooper/Project
+
+### Notebook page
+
+- [ ] 
+
+### Attributions
+
+- [ ] Update Copy
+
+### Collaborations
+
+- [ ] add table
+
+### Human Practices
+
+- [ ] reword "The existence itself of Genspace is an exercise in Human Practices" 
+- [ ] Picture of students around computer
+- [ ] Remove Dates
+
+### Safety
+
+- [ ] 
+
+
+
+Questions
+
+Is the Collaborations Complete? It looks like we present a protocol, then mention University of Michigan but that section looks incomplete.
+
+There is 3 parts document in the Google Doc can you consolidate or tell me which one.
+
+You said the design page was a requirement. Can you assemble the content for that? Also where would it live in the nav?  
 
 
 ## Notes
@@ -62,6 +85,11 @@ I would load Atributions, collaborations, human practices, notebook and part tab
 
 
 ### Files 
+
+Human practices 
+
+http://2015.igem.org/File:Genspace_Synbiota_Kit.jpg
+
 http://2015.igem.org/File:EnqueteGowanus_med.mp4 
 http://2015.igem.org/File:EnqueteGowanus_poster.png
 
