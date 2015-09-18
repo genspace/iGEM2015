@@ -105,7 +105,6 @@ Where should an image carousel of collecting samples be best placed? likewise Im
 
 
 
-
 ## Notes
 
 Notebook google doc published as a webpage (for images) here: https://docs.google.com/document/d/1MLNLgOdGuOWq0MM2o1ZfrbBRu0piQNkQpnecE-bnBSM/pub
@@ -127,6 +126,20 @@ I would load Atributions, collaborations, human practices, notebook and part tab
 
 
 ### Files 
+
+http://2015.igem.org/Template:Genspace_index
+
+Header 
+http://2015.igem.org/File:D3.min.txt
+http://2015.igem.org/wiki/index.php?title=Template:Genspace&action=edit
+
+http://2015.igem.org/File:Gowanus_canal.jpg
+http://2015.igem.org/File:Columbia_NYC_GenspaceLogo.png
+http://2015.igem.org/File:IGEM-genspace-logo-lg.png
+
+js
+http://2015.igem.org/File:D3.min.txt
+
 
 Human practices 
 
@@ -157,3 +170,13 @@ http://2015.igem.org/File:Genspace_image00.png
 http://2015.igem.org/File:Genspace_image01.png
 http://2015.igem.org/File:Genspace_image02.png
 http://2015.igem.org/File:Genspace_image03.png
+
+Team
+http://2015.igem.org/File:Genspace_teamphoto_web.jpg
+
+Safety
+http://2015.igem.org/File:Gowanus_dna_4.JPG
+http://2015.igem.org/File:Gowanus_dna_3.jpg
+http://2015.igem.org/File:Gowanus_dna_2.jpg
+http://2015.igem.org/File:Gowanus_dna_1.jpg
+http://2015.igem.org/File:Gowanus_dna_0.jpg
