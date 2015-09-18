@@ -134,9 +134,9 @@ code
   color $green
   
 .section
-  margin 60px 0
-  border-top 1px
-  border-color #e7e7e7
+  padding 20px
+  margin 30px 0
+  display block
   
 .background
   background-color rgba(255,255,255,0.8)
@@ -321,39 +321,47 @@ img
     width 100%
     font-size 14px
     margin-top -40px
-          
-.human
+    
+.quote
+  width 80%
+  margin-left 5%          
   
+.human,
+.colab
+  .section
+    background-color rgba(255,255,255,0.8)
+    padding 20px
+    margin 40px 0px
+    
+    &:first-child
+      margin 0px
+    .lead
+      font-size 16px
+    img
+      width 100%
+      margin 40px auto
+      display block
+      &.small
+        max-width 500px
+      &.col2
+        margin 20px 1%
+        max-width 46%
+        float left
+      &.col3
+        margin 20px .5%
+        max-width 32%
+        float left
+        &:first-child
+          margin-left 1%
+        &:last-child
+          margin-right 1%
+
+.human
   .practice
     .lead
       margin-bottom 10px  
-    .section
-      background-color rgba(255,255,255,0.8)
-      padding 20px
-      margin 40px 0px
-      &:first-cild
-        margin 0px
-      .lead
-        font-size 16px
-      img
-        width 100%
-        margin 40px auto
-        display block
-        &.small
-          max-width 500px
-        &.col2
-          margin 20px 1%
-          max-width 46%
-          float left
-        &.col3
-          margin 20px .5%
-          max-width 32%
-          float left
-          &:first-cild
-            margin-left 1%
-          &:last-cild
-            margin-right 1%
-          
+    
+
 .attributions
   .member
     width 100%

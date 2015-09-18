@@ -102,12 +102,9 @@
     </div>
     <div class="teamBackground"></div>
     <div id="content" class="container team">
-        <h1>The Genspace team is made up of community members. </h1>
+        <h2>The Genspace team is made up of community members. </h2>
         
-        <p class="lead">There are four adults on our team, all from various walks of life and none with advanced degrees in biological sciences. None of them had ever heard of synthetic biology prior to joining Genspace, and they have learned the science through our classes and through iGEM participation. There are twelve students from local high schools on the team. They came to Genspace because their schools could not afford to support high school teams and they really wanted to learn synthetic biology and be part of iGEM. None of them had any prior independent hands-on research experience. Genspace has a mission to provide for students like this so participation was on a first-come first-serve basis. The final four team members are college students spending the summer in New York, all of whom are majoring in the sciences. We consider all of these people part of the New York community we serve.</p>
-
-        <h1>Member Bio's</h1>
-
+        <p class="lead">There are four <b>adults</b> on our team, all from various walks of life and none with advanced degrees in biological sciences. None of them had ever heard of synthetic biology prior to joining Genspace, and they have learned the science through our classes and through iGEM participation. There are twelve <b>students from local high schools</b> on the team. They came to Genspace because their schools could not afford to support high school teams and they really wanted to learn synthetic biology and be part of iGEM. None of them had any prior independent hands-on research experience. Genspace has a mission to provide for students like this so participation was on a first-come first-serve basis. The final four team members are <b>college students</b> spending the summer in New York, all of whom are majoring in the sciences. We consider all of these people part of the New York community we serve.</p>
     </div>
 
     <footer class="footer">
@@ -144,7 +141,7 @@
         
         var sections = d3.select('#content').selectAll('div').data(memberData).enter().append('div.section.member')
 
-        sections.append('h3.heading').text(ƒ('key'))
+        sections.append('h2.heading').text(function(d){return d.key+" Bio's"})
         sections.each(function(d,i){
           var el = d3.select(this)
 
