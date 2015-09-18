@@ -73,9 +73,10 @@ Human Practices is still missing this section:
 
 	One of the first questions we asked ourselves when we initiated this iGEM project was “How can we use synthetic biology to address the needs of the community living around the Gowanus Canal?”. There were several groups that we wanted to have conversations with. The Gowanus Canal is the focus of several neighborhood organizations, including the Gowanus Dredgers and the Gowanus Canal Conservancy. Although Genspace had already worked with both of these organizations during collections for the Enquete Gowanus project, we felt that our idea of a biosensor should be presented to the community for feedback, and that this was another opportunity for engagement around synthetic biology and iGEM. 
 
-What about the students mom who took pictures she should be in attributions. What is her name? 
-	Rhonda Hack
 
+
+You said the design page was a requirement. Can you assemble the content for that? Also where would it live in the nav?  
+Where should an image carousel of collecting samples be best placed? likewise Images of lab work processing the samples.
 
 
 
