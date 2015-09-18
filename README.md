@@ -17,7 +17,7 @@
 
 ### Team page
 
-- [ ] add copy "The Genspace team is made up of community members" from human practices
+- [ ] remove images from page
 
 ### Project Page
 
@@ -25,15 +25,11 @@
 
 ### Parts page
 
-- [x] scrollTo properly
-- [ ] add part NsrR
-- [ ] add part pYeaR
-- [ ] add part LsrACDB RBSs
-- [ ] make page like http://2011.igem.org/Team:Columbia-Cooper/Project
+- [ ] remove images from parts page
 
 ### Notebook page
 
-- [ ] 
+- [ ] remove images from page
 
 ### Attributions
 
@@ -41,13 +37,12 @@
 
 ### Collaborations
 
-- [ ] add table
+- [ ] remove images from page
 
 ### Human Practices
 
-- [ ] reword "The existence itself of Genspace is an exercise in Human Practices" 
-- [ ] Picture of students around computer
-- [ ] Remove Dates
+- [ ] remove images from page
+- [ ] add random section
 
 ### Safety
 
@@ -76,6 +71,7 @@ Human Practices is still missing this section:
 
 
 You said the design page was a requirement. Can you assemble the content for that? Also where would it live in the nav?  
+
 Where should an image carousel of collecting samples be best placed? likewise Images of lab work processing the samples.
 
 
