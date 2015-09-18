@@ -1,5 +1,29 @@
 # iGEM2015
 
+## Status
+
+### Complete
+
+Team
+Collaborations
+Attributions
+Notebook
+
+### MVP
+
+Safety
+Parts Table
+Human Practices
+
+### Incomplete
+
+Achievements
+Human Practices
+Project
+Design
+
+
+
 ## Todos
 
 ### Header
@@ -25,7 +49,7 @@
 
 ### Parts page
 
-- [ ] remove images from parts page
+- [x] remove images from parts page
 
 ### Notebook page
 
@@ -47,6 +71,11 @@
 ### Safety
 
 - [ ] 
+
+
+
+
+
 
 
 
@@ -122,3 +151,9 @@ http://2015.igem.org/File:Genspace_fbi.JPG
 
 Collaborations
 http://2015.igem.org/File:Genspace_colab.png
+
+Parts
+http://2015.igem.org/File:Genspace_image00.png
+http://2015.igem.org/File:Genspace_image01.png
+http://2015.igem.org/File:Genspace_image02.png
+http://2015.igem.org/File:Genspace_image03.png
