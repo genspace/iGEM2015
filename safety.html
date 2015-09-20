@@ -11,6 +11,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="style/bootstrap.min.css" rel="stylesheet">
+    <link href="style/slick.css" rel="stylesheet">
+    <link href="style/slick-theme.css" rel="stylesheet">
     <link href="style/index.css" rel="stylesheet">
   </head>
 
@@ -101,7 +103,24 @@
     </g>
     </svg>
 
-    <div id="content" class="container safety">
+    <div class="gallery">
+      <div>
+        <img src="http://2015.igem.org/wiki/images/7/72/Gowanus_dna_0.jpg" alt="">
+      </div>
+      <div>
+        <img src="http://2015.igem.org/wiki/images/b/b2/Gowanus_dna_1.jpg" alt="">
+      </div>
+      <div>
+        <img src="http://2015.igem.org/wiki/images/d/d8/Gowanus_dna_2.jpg" alt="">
+      </div>
+      <div>
+        <img src="http://2015.igem.org/wiki/images/4/42/Gowanus_dna_3.jpg" alt="">
+      </div>
+      <div>
+        <img src="http://2015.igem.org/wiki/images/5/58/Gowanus_dna_4.JPG" alt="">
+      </div>
+    </div>
+    <div id="page" class="container safety">
       <h1>Safety</h1>
       <div class="section">
         <h4><b>What were the safety issues in the Biosensor part of our project?</b></h4>
@@ -156,12 +175,26 @@
         <p class="text-muted">Place sticky footer content here.</p>
       </div>
     </footer>
+    
 
 
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="js/slick.min.js" charset="utf-8"></script>
     <script src="js/d3.min.js" charset="utf-8"></script>
     <script src="js/d3-jetpack.js"></script>
     <script src="js/graph-scroll.js"></script>
     <script src="js/shared.js"></script>
+
+    <script>
+      $('.gallery').slick({
+        slidesToShow: 1,
+        // slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+
+      d3.selectAll('.slick-slide').style('max-height',.7*window.innerHeight+'px')
+    </script>
     
 </body></html>
 

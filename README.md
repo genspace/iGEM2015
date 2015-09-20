@@ -105,7 +105,6 @@ Where should an image carousel of collecting samples be best placed? likewise Im
 
 
 
-
 ## Notes
 
 Notebook google doc published as a webpage (for images) here: https://docs.google.com/document/d/1MLNLgOdGuOWq0MM2o1ZfrbBRu0piQNkQpnecE-bnBSM/pub
@@ -115,18 +114,28 @@ Standard pages http://2015.igem.org/Wiki_How-To/Standard_Pages
 Special page http://2015.igem.org/Team:Example/Practices
 
 
-### Judging
 
-One of the ways that they give us medals is by directly linking pages from our WIKI to a Judging Form. If this process is interrupted them we will not win a medal. Here is the link so you can see whats going on.
+### Judging
 
 http://igem.org/2015_Judging_Form?id=1799
 
-If you can please put content on these wiki pages before the others I would appreciate it. If you have any questions call me. 
-
-I would load Atributions, collaborations, human practices, notebook and part table	
 
 
 ### Files 
+
+http://2015.igem.org/Template:Genspace_index
+
+Header 
+http://2015.igem.org/File:D3.min.txt
+http://2015.igem.org/wiki/index.php?title=Template:Genspace&action=edit
+
+http://2015.igem.org/File:Gowanus_canal.jpg
+http://2015.igem.org/File:Columbia_NYC_GenspaceLogo.png
+http://2015.igem.org/File:IGEM-genspace-logo-lg.png
+
+js
+http://2015.igem.org/File:D3.min.txt
+http://2015.igem.org/File:Slick.min.txt
 
 Human practices 
 
@@ -157,3 +166,16 @@ http://2015.igem.org/File:Genspace_image00.png
 http://2015.igem.org/File:Genspace_image01.png
 http://2015.igem.org/File:Genspace_image02.png
 http://2015.igem.org/File:Genspace_image03.png
+
+Team
+http://2015.igem.org/File:Genspace_teamphoto_web.jpg
+
+Safety
+http://2015.igem.org/File:Gowanus_dna_4.JPG
+http://2015.igem.org/File:Gowanus_dna_3.jpg
+http://2015.igem.org/File:Gowanus_dna_2.jpg
+http://2015.igem.org/File:Gowanus_dna_1.jpg
+http://2015.igem.org/File:Gowanus_dna_0.jpg
+
+Notebook 
+http://2015.igem.org/File:Genspace_7-23-15.png

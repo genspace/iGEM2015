@@ -101,7 +101,7 @@
     <div class="banner">
     </div>
     <div class="teamBackground"></div>
-    <div id="content" class="container">
+    <div id="page" class="container">
         <div class="row teamIntro">
           <h2>The Genspace team is made up of community members. </h2>
           
@@ -152,7 +152,7 @@
 
           var rows = el.selectAll('div').data(el.datum().values.sort(d3.ascendingKey('name'))).enter().append('div.row.section')
           var r = rows.append('div.col-md-5')  
-          r.append('img').classed('bio',true).attr('src',function(d){return 'img/'+d.img})
+          r.append('img').classed('bio',true).attr('src',function(d){return d.img})
           
           var l = rows.append('div.col-md-7',true)  
           l.append('h3').text(function(d){return d.name})
